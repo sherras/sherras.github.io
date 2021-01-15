@@ -20,5 +20,12 @@
         margin-right: 1.5em;
         margin-top: 20px;
     }
+    a {
+        color: black;
+    }
+    footer a {
+        color: beige;
+    }
+
 
 }
