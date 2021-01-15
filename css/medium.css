@@ -4,5 +4,21 @@
         padding: 1rem;
         font-family:'Josefin Sans', sans-serif;
     }
+    header, footer{
+        background-color:rgb(17, 68, 83);
+        color:beige;
+    }
+    footer p{
+        padding: 10px;
+        font-family:'Josefin Sans', sans-serif;
+    
+    }
+    img{
+        box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.384);
+        float: right;
+        height: 150px;
+        margin-top: -5em;
+        margin-right: 1.5em;
+    }
 
 }
