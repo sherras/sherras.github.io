@@ -14,8 +14,9 @@ h1{
 }
 img{
     height: 150px;
-    margin-top: -5em;
     margin-right: 1.5em;
+    margin-top: 20px;
+    align-items: center;
 }
 footer{
     background-color:rgb(17, 68, 83);
