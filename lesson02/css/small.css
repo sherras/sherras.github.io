@@ -16,6 +16,8 @@ h1{
 font-family: 'Xanh Mono', monospace;
 color:#C74343;
 font-size: 230%;
+padding-left: 20px;
+
 }
 h2{
     font-family: 'Xanh Mono', monospace;
@@ -24,7 +26,6 @@ h2{
     padding-left: 20px;
     padding-bottom: 20px;
     border-bottom: 5px solid #92C8A6;
-    
     }
 h3{
     font-family: 'Xanh Mono', monospace;
@@ -36,15 +37,30 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 30px;
-    background-color: white;
+    background-color: #2C4251;
     margin: 30px;
-    width: 80%;
+    
 }
 header{
-    width: 80%;
+    
+    background-color: white;
+    border: 5px solid #92C8A6;
+    border-radius: 20px;
+    margin: 30px;
 }
+#NameS{
+    color:#2C4251;
+    border-bottom:none;
+    margin-top: -20px;
+    margin-bottom: -5px;
+
+}
+
 footer{
-    width: 80%;
+    margin:30px;
+    border: 5px solid #92C8A6;
+    border-radius: 20px;
+    background-color:white;
 }
 a:hover {
     text-decoration: none;
@@ -64,6 +80,7 @@ img{
 .visualH, .contrast, .alignment{
     border: 5px solid #92C8A6;
     border-radius: 20px;
+    background-color: white;
 }
 .visualH{
     grid-column: 1/2;
