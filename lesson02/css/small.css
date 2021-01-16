@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Xanh+Mono:ital@0;1&display=swap');
+body{
+background-color:#2C4251;
+font-family: "Open Sans", sans-serif;
+color:#2C4251;
+}
+li, p{
+    font-family: "Open Sans", sans-serif;
+    color:#2C4251;
+}
+p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h1{
+font-family: 'Xanh Mono', monospace;
+color:#C74343;
+font-size: 230%;
+}
+h2{
+    font-family: 'Xanh Mono', monospace;
+    color:#C74343;
+    font-size: 190%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #92C8A6;
+    
+    }
+h3{
+    font-family: 'Xanh Mono', monospace;
+    color:#C74343;
+    font-size: 150%;
+    padding-left: 20px;
+    }
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    background-color: white;
+    margin: 30px;
+    width: 80%;
+}
+header{
+    width: 80%;
+}
+footer{
+    width: 80%;
+}
+a:hover {
+    text-decoration: none;
+    color:#C74343
+}
+a{
+color:#2C4251
+}
+img{
+    height: 650px;
+    box-shadow: 10px 10px 10px #ccc;
+    margin:auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+.visualH, .contrast, .alignment{
+    border: 5px solid #92C8A6;
+    border-radius: 20px;
+}
+.visualH{
+    grid-column: 1/2;
+}
+.contrast{
+    grid-column: 2/3;
+}
+.alignment{
+    grid-column: 3/4;
+
+}
