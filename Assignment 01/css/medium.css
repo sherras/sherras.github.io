@@ -3,26 +3,35 @@
         font-size: 2.5rem;
         padding: 1rem;
         font-family:'Josefin Sans', sans-serif;
+        text-align: start;
+    }
+    h2{
+        text-align: start;
     }
     header, footer{
         background-color:rgb(17, 68, 83);
         color:beige;
+        border-radius: 1em;
     }
     footer p{
         padding: 10px;
         font-family:'Josefin Sans', sans-serif;
-    
+        text-align: start;
     }
     img{
-        box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.384);
+        box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.384);
         float: right;
-        height: 150px;
+        height: 175px;
         margin-right: 1.5em;
         margin-top: 20px;
+    }
+    ul{
+       text-align: start;
     }
     a {
         color: black;
     }
+    
     footer a {
         color: beige;
     }
