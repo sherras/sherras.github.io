@@ -1,3 +1,16 @@
+@media only screen and (min-width: 60em){
+
 main{
-    grid-template-columns: 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.visualH{
+    grid-column: 1/2;
+}
+.contrast{
+    grid-column: 2/3;
+}
+.alignment{
+    grid-column: 3/4;
+
+}
 }

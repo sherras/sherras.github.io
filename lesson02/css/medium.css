@@ -1,5 +1,17 @@
- 
+ @media only screen and (min-width: 37.5em){
+
 main{
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr 1fr;
 }
+.visualH{
+    grid-column: 1/2;
+}
+.contrast{
+    grid-column: 2/3;
+}
+.alignment{
+    grid-column: 1/2;
+
+}
+ }
