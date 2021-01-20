@@ -4,6 +4,9 @@ background-color:#2C4251;
 font-family: "Open Sans", sans-serif;
 color:#2C4251;
 align-items: center;
+width: 80%;
+align-self: center;
+margin: auto;
 }
 p{
     font-family: "Open Sans", sans-serif;
