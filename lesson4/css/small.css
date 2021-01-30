@@ -58,7 +58,6 @@ nav ul li a{
     padding: .8em 2%;
     text-decoration: none;
     color: white;
-    border-top: 1px solid rgba(32, 25, 162, .5);
     margin-left: 30px;
 }
 nav a:hover{
@@ -73,8 +72,10 @@ nav button{
     color: white;
     margin-left: 35px;
 }
-.active{
-    color:#16B1De;
+nav ul li.active a{
+    color:#2019A2;
+    background-color: #16B1De;
+
 }
 p,
 h1,
@@ -118,6 +119,7 @@ h2{
 }
 img{
     width:60%;
+    max-width: 150px;
     padding-left: 30px;
     padding-right: 30px; 
 }

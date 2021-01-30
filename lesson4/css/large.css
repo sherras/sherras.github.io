@@ -1,5 +1,22 @@
-@media only screen and (min-width: 80em){
-    header img{
-        width:5%;
+@media only screen and (min-width: 60em){
+    header{
+        justify-content: center;
+        margin-left: -500px;
+    }
+    nav{
+        clear:both;
+        padding-left: 160px;
+    }
+    nav ul li a{
+        padding: 15px;
+    }
+
+    
+    main, 
+    footer{
+        width: 70%;
+    }
+    main{
+        margin:auto;
     }
 }
