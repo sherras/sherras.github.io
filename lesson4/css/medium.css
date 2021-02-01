@@ -1,12 +1,14 @@
 @media only screen and (min-width: 37.5em){
-    nav ul{
-      margin-left: 2%;
+    
+    nav ul li{
+        display: inline-flex;
     }
-    nav ul li {
-        float: left;
-    }
+   
     nav ul li a{
         border: none;
+        text-align: center;
+        padding: 15px;
+
     }
     nav ul.close{
         display:block;
