@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <meta name="description" content="Type meaningful description here">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script >
+   function main() {
+    var depth = parseInt(readLine(), 10);
+    //your code goes here
+    //input: user types a number
+    //Processing: run a loop that goes (feet += 7 - 2)
+    //output: computer give the day it will reach 
+    var feet = 0;
+    for (x = 0; x < depth; x++){
+        feet += 7 - 2;
+        if (feet == depth){
+            break;
+            document.getElementById("outputDay").innerHTML = x;
+        }
+    }
+}
+
+        
+    </script>
+</head>
+<header>
+</header>
+<body>
+    <Button onclick="main()"></Button>
+    <div class="outputDay"></div>
+</body>
+<footer>
+</footer>
+</html>
