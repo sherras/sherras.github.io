@@ -9,8 +9,7 @@ header,
 main{ 
     background-color:white;
 }
-header,
-footer{
+header{
     display: flex;
     justify-content: start;
     align-content: center;
@@ -23,7 +22,7 @@ main{
 
 }
 main p{
-    width:70%;
+    
     text-align: start;
 
     display: block;
@@ -121,13 +120,10 @@ h2{
 footer{
     background-color:#2019A2;
     color: white;
-     margin:auto;
+    margin:auto;
  
  }
- footer p{
-     padding-bottom:10px;
-     margin-bottom: 5px;
- }
+ 
  .clearfix:after {
     content: "";
     display: table;
@@ -146,25 +142,7 @@ footer{
       width: 100%;
       
   }
-  .weatherSum{
-    border: 1px solid black;
-    margin-left: 30px;
-    position: absolute;
-    top: 2rem;
-    background-color: white;
-    box-shadow: 10px 10px 10px rgba(255,255,255, .5);
-  }
-  .weatherSum p{
-      border: none;
-      background-color: transparent;
-      padding: 0;
-      margin:0;
-      padding-left: 30px;
-      
-  }
-  .wInfo{
-      padding-bottom: 20px;
-  }
+  
   table{
       border-collapse: collapse;
     border: 1px solid black;
@@ -174,9 +152,9 @@ footer{
 
   }
   table img{
-      width: 35%;
+    width: 35%;
 
-  }
+}
   .days th{
     background-color: rgba(22, 177, 222, .2);
     border: 1px solid black;
@@ -185,6 +163,18 @@ footer{
   th{
     border-right: 1px solid black;
   }
-  
+
+footer img,
+  .article img{
+    margin: auto;
+    padding-left: 30px;
+    width: 90%;
+}
+.location{
+    display: none;
+}
+.social{
+    display:none;
+}
 
   
