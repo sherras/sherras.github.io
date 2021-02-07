@@ -42,20 +42,10 @@ function datesTimes(){
 }
 
 function banner(){
-    let dayNames = 
-    [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
-    ];
     let d = new Date();
-    let day = dayNames[d.getDay()];
-    if (day == "Saturday"){
-        alert("Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.");
+    let day = d.getDay();
+    if (day == 5){
+        document.getElementById("bannerFri").innerHTML = "Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
     }
     
 }
