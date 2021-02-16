@@ -44,7 +44,7 @@ function datesTimes(){
 function banner(){
     let d = new Date();
     let day = d.getDay();
-    if (day == 1){
-        document.getElementById("bannerFri").innerHTML = "Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
+    if (day == 5){
+        document.getElementById("bannerFri").classList.toggle('hide');
     }
 }
