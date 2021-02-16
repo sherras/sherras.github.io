@@ -15,9 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <script src="js/script.js"></script>
 </head>
-<body onload="datesTimes()">
+<body onload="datesTimes(); banner();">
+   
+    <div id="bannerFri" class="hide">Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
     <header>
-    <div onload="banner()" id="bannerFri"></div>
         <img src="images/weather_logo_not_transparent.png" alt="The Weather Heather Logo"> 
         <section>
         <h1>The Weather Heather</h1>
@@ -40,15 +41,11 @@
     <h1>Preston Idaho</h1>
     <div class="heroDiv">
    <div class="heroImg">
-    <figure class = "myImage">
-        <img src="images/wdd230_image_franklinOriginal.jpeg" alt = "Hero Image" srcset="wdd230_image_franklinOriginal_1x.jpeg 1x, wdd230_image_franklinOriginal_2x.jpeg 2x, wdd230_image_franklinOriginal_3x.jpeg 3x"> 
-
-        <figcaption> Hero Image</figcaption>
-    </figure> 
+      <img src="images/pexels-dhyamis-kleber-624929.jpeg" alt="Beautiful Weather">
     </div>
     <section class="weatherSum">
         <div class='wInfo'>
-        <h2>Weather Summary</h2> 
+        <h2>Weather Summary</h2>
         <p>Currently: Sunny</p>
         <p>Wind Chill: 73°F</p>
         <p>Humidity: 43%</p>
@@ -56,32 +53,37 @@
     </div>
     </section>
     </div>
-    <table class="fiveDay">
-        <tr class="days">
-            <th> Wednesday</th>
-            <th> Thursday</th>
-            <th> Friday</th>
-            <th> Saturday</th>
-            <th> Sunday</th>
-        </tr>
-        <tr>
-            <th><img src="images/sun.png" alt="sun"></th>
-            <th><img src="images/sun.png" alt="sun"></th>
-            <th><img src="images/sun.png" alt="sun"></th>
-            <th><img src="images/sun.png" alt="sun"></th>
-            <th><img src="images/sun.png" alt="sun"></th>
-        </tr>
-        <tr>
-            <th> 89°F</th>
-            <th>87°F</th>
-            <th>78°F</th>
-            <th>75°F</th>
-            <th>72°F</th>
-        </tr>
-    </table>
+    <div class="fiveDay">
+        <span>
+        <span>Monday</span>
+            <img src="images/sun.png" alt="sun">
+            <span>89°F</span>
+        </span>
+        <span>
+            <span>Tuesday</span>
+                <img src="images/sun.png" alt="sun">
+                <span>89°F</span>
+         </span>
+         <span>
+        <span>Wednesday</span>
+            <img src="images/sun.png" alt="sun">
+            <span>89°F</span>
+        </span>
+        <span>
+            <span>Thursday</span>
+                <img src="images/sun.png" alt="sun">
+                <span>89°F</span>
+        </span>
+        <span>
+        <span>Friday</span>
+                <img src="images/sun.png" alt="sun">
+                <span>89°F</span>
+            </span>
+         
+    </div>
     <div class="article">    
     <h2>Article</h2>
-    <img src="images/TCIF4026.jpeg" alt='Rainbow'>
+    <img src="images/TCIF4026.jpg" alt='Rainbow'>
 
     <p>Lorem ipsum dolor sit amet, cum hinc eros mnesarchum no, rebum facilis gubergren usu ut, sea ut dicam numquam. An doctus sanctus denique nam, imperdiet interpretaris pro in. Quis iriure usu at, vix ad alia ipsum. Est eu legere periculis repudiare, has eu idque insolens honestatis. Te usu gubergren consequuntur mediocritatem, ea clita equidem principes duo, cu prima liberavisse contentiones vis.
 

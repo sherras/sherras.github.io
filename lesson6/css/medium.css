@@ -77,4 +77,11 @@
       display: inline;
       margin: 10px;
   }
+#bannerFri{
+text-align: center;
+}
+.fiveDay{
+    flex-direction: row;
+
+}
     }
