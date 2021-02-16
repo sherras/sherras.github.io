@@ -14,8 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
    <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet"> -->
     <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
 </head>
-<body onload="datesTimes(); banner();">
+<body onload="datesTimes(); banner(); windChill()">
    
     <div id="bannerFri" class="hide">Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
     <header>
@@ -53,9 +54,10 @@
         <div class='wInfo'>
         <h2>Weather Summary</h2>
         <p>Currently: Sunny</p>
-        <p>Wind Chill: 73°F</p>
+        <p>Temperature: <span id="temp">73</span>°F</p>
+        <p>Wind Chill: <span id="windC"></span></p>
         <p>Humidity: 43%</p>
-        <p>Wind Speed: 5 mph</p>
+        <p>Wind Speed: <span id="speed">5</span> mph</p>
     </div>
     </section>
     </div>
@@ -122,6 +124,6 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
-    WebFont.load({google: {families: ['Rubik, Alga']}});
+    WebFont.load({google: {families: ['Rubik']}});
 </script>
 </html>
