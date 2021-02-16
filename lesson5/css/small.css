@@ -87,13 +87,12 @@ ul{
 }
 
 header img{
-    width:25%;
-    padding: 15px;
+    width:100%;
+    height: auto;
+    
     margin-left: 15px;
-    width:60%;
     max-width: 150px;
-    padding-left: 30px;
-    padding-right: 30px;
+    
 }
 header h1{
     font-size: 2rem;
@@ -168,6 +167,33 @@ margin-left: 30px;
 }
 .hide{
     display: none;
+}
+.fiveDay{
+    display: flex;
+    flex-direction: column;
+    overflow: none;
+    justify-content:center;
+    align-items: center;
+}
+.fiveDay img{
+    width: 100%;
+    height: auto;
+    max-width: 60px;
+}
+.fiveDay span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:auto;
+    max-width: 200px;
+}
+.fiveDay > span{
+    border: 1px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
 }
 
 

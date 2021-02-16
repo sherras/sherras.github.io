@@ -80,4 +80,8 @@
 #bannerFri{
 text-align: center;
 }
+.fiveDay{
+    flex-direction: row;
+
+}
     }
