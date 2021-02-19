@@ -29,6 +29,9 @@ imagesToLoad.forEach((img) => {
         loadImages(img);
     });
 } 
+
+
+
 /*const images = document.querySelectorAll("[data-src]");
 
 function preloadImage(img){
