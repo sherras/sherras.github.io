@@ -14,4 +14,13 @@
     main{
         margin:auto;
     }
+    .photoGal {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;}
+    picture:hover{
+        box-shadow: 0 0 10px lightslategray;
+    }
+    figcaption{
+        padding: 5px;
+    }
 }
