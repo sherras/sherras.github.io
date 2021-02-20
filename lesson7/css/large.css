@@ -17,10 +17,10 @@
     .photoGal {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;}
-    picture:hover{
+    .picture:hover{
         box-shadow: 0 0 10px lightslategray;
     }
-    figcaption{
-        padding: 5px;
+    .picture p{
+        padding-top: 5px;
     }
 }

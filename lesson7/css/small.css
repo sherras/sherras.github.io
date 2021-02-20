@@ -194,14 +194,18 @@ margin-left: 30px;
     border-bottom: 2px solid black;
 
 }
-picture img[data-src]{
+.picture img[data-src]{
     filter: blur(0.2em);
 }
-picture img{
+.picture img{
     filter: blur (0em);
     transition: filter 0.5s;
     width: 100%;
     height: auto;
+}
+.picture p{
+    padding-left:0px;
+    padding-right: 0px;
 }
 .photoGal {
     display: grid;

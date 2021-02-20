@@ -87,12 +87,11 @@ text-align: center;
 .photoGal {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
 }
-picture img{
+.picture{
+    margin: 0px; 
+}
+.picture img{
 max-width: 400px;
-}
-.lake{
-    grid-column-start: 2/3 ;
 }
     }
