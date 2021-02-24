@@ -1,0 +1,51 @@
+body{
+    text-align:center;
+    font-family: 'Ubuntu', sans-serif;
+}
+table{
+    text-align: center;
+    margin:auto;
+    margin-top: 40px;
+    background-color: #ccc;
+    box-shadow:7px 7px 10px  #628ca6  ;
+}
+tr{
+    background-color:#e7f0ed;
+    
+}
+tr:nth-child(odd){
+    background-color:#e7ffed;
+
+}
+thead{
+    font-size: x-large;
+}
+th,
+.emph{
+    color: white;
+    background-color:#628ca6;
+}
+thead,
+tfoot,
+td,
+th{
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+thead th,
+tfoot td{
+    background-color: #7fb9c2;
+    color: black;
+}
+tfoot{
+    font-size: x-small;
+}
+td{
+    font-size: smaller;
+}
+
+/*#e7f0ed light green
+#e7ffed light green for data rows
+#628ca6 background headings
+#7fb9c2 background for head and foot?*/
