@@ -43,14 +43,13 @@
 <form>
     <fieldset>
         <legend>Personal Information</legend>
-        <label class="first"> Full Name*<input type="text" name="fullname" pattern="[A-Za-z] {5,}" required></label>
+        <label class="first"> Full Name*<input type="text" name="fullname" pattern="[a-zA-Z]{2,} \s [a-zA-Z]{3,}" required></label>
         <label class="first"> Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
         <label class="first"> Phone Number*<input type="tel" name="phone" required></label>
         <label class="first"> Zip Code*<input type="number" name="zip" required></label>
     </fieldset>
     <fieldset>
         <legend>Storm Information</legend>
-        <div>Please provide the information regarding your storm:</div>
         <label class="first"> Storm Date<input type="date" name="date"></label>
         
         <label class="first"> Storm Type<input list="stormType" name="storm">
@@ -63,7 +62,7 @@
             </datalist>
         </label>
         <!--Thank you Brother Blazzard for the codepen to reference for the code below for the range, that was neat-->
-        <label class="first">Storm Severity<input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="severity">
+        <label class="slider">Storm Severity<input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="severity">
             <span id="ratingvalue">5</span>
         </label>
             <datalist id="tickmarks">
@@ -86,10 +85,10 @@
             <option value="Fish Haven">Fish Haven</option>
         </select>
         </label>
-       <div> User In-Danger Level</div>
-        <label class="side"> <input type="radio" name="danger" value="yes">Yes</label>
-        <label class="side">  <input type="radio" name="danger" value="maybe">Maybe</label>
-        <label class="side">  <input type="radio" name="danger" value="no">No</label>
+       <div class="userD"> User In-Danger Level</div>
+        <label class="side"> <input type="radio" name="danger" value="yes"> Yes</label>
+        <label class="side">  <input type="radio" name="danger" value="maybe"> Maybe</label>
+        <label class="side">  <input type="radio" name="danger" value="no"> No</label>
 
     </fieldset>
     <input type="submit" name='report' value="Report My Storm" class="submitBtn">
