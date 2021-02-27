@@ -23,4 +23,7 @@
     .picture p{
         padding-top: 5px;
     }
+    div.thanks span.check{
+        margin: 0 200px 0 200px;
+        }
 }

@@ -33,14 +33,14 @@
             <li ><a href="https://sherras.github.io/lesson5/preston-5.html">Preston Idaho</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li class="active"><a href="#">Storm Center</a></li>
-            <li><a href="gallery-7.html">Gallery</a></li>
+            <li class="active"><a href="https://sherras.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://sherras.github.io/lesson7/gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
     
 <main>
 <h1>Storm Center Report</h1>
-<form>
+<form method="GET" action="thanks.html">
     <fieldset>
         <legend>Personal Information</legend>
         <label class="first"> Full Name*<input type="text" name="fullname" pattern="[a-zA-Z -.'']{5,}" required></label>
@@ -89,8 +89,9 @@
         <label class="side"> <input type="radio" name="danger" value="yes"> Yes</label>
         <label class="side">  <input type="radio" name="danger" value="maybe"> Maybe</label>
         <label class="side">  <input type="radio" name="danger" value="no"> No</label>
+        <div class="comment">Additional Comments:</div>
         <label class="first">
-           <div class="comment">Additional Comments:</div> <textarea name="comments" rows="4" cols="50"></textarea>
+            <textarea name="comments" rows="4" cols="50"></textarea>
         </label>
     </fieldset>
     <input type="submit" name='report' value="Report My Storm" class="submitBtn">

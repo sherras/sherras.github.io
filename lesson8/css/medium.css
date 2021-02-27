@@ -94,4 +94,7 @@ text-align: center;
 .picture img{
 max-width: 400px;
 }
+div.thanks span.check{
+margin: 0 200px 0 200px;
+}
     }
