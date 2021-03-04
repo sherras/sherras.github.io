@@ -5,8 +5,13 @@ body{
 }
 main{
     box-shadow: 0 0 30px #333;
+    max-width: 97%;
+    margin:auto;
+}
+div.cards{
     display: grid;
     grid-template-columns: 1fr;
+    
 }
 
 h1{
@@ -29,8 +34,6 @@ section{
     padding: 10px;
     border: solid 1px rgb(7, 82, 7);
     margin: 5px;
-    margin-right: 10px;
-    margin-left: 10px;
     max-width: 400px;
 }
 footer{
@@ -40,14 +43,14 @@ footer{
     padding: 10px;
 }
 @media only screen and (min-width: 450px){
-    main{
+    div.cards{
         grid-template-columns: 1fr 1fr;
 
     }
 }
 
-@media only screen and (min-width: 890px){
-    main{
+@media only screen and (min-width: 900px){
+    div.cards{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
