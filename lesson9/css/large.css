@@ -1,0 +1,26 @@
+@media only screen and (min-width: 60em){
+    nav ul{
+        margin-left: 13%;
+      }
+   header img{
+    margin-left: 13%;
+   }
+   
+    
+    main, 
+    footer{
+        width: 70%;
+    }
+    main{
+        margin:auto;
+    }
+    .photoGal {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;}
+    .picture:hover{
+        box-shadow: 0 0 10px lightslategray;
+    }
+    .picture p{
+        padding-top: 5px;
+    }
+}
