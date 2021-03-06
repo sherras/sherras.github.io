@@ -80,6 +80,7 @@ fetch(requestURL)
       let yearF = document.createElement('p');
       let population = document.createElement('p');
       let rain = document.createElement('p');
+      let townData = document.createElement('div');
       //use template literals
       h2.textContent = `${town.name}`;
       motto.textContent = `${town.motto}`;
@@ -89,12 +90,13 @@ fetch(requestURL)
       pimg.setAttribute('src', `images/${town.photo}`);
       pimg.setAttribute('alt', `${town.name} image.`);
       
-
-      card.append(h2);
-      card.appendChild(motto);
-      card.appendChild(yearF);
-      card.appendChild(population);
-      card.appendChild(rain);
+      
+      townData.append(h2);
+      townData.appendChild(motto);
+      townData.appendChild(yearF);
+      townData.appendChild(population);
+      townData.appendChild(rain);
+      card.append(townData);
       card.append(pimg);
       townInfo.append(card);
       }

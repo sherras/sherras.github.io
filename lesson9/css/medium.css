@@ -96,26 +96,33 @@ max-width: 400px;
 }
 
 /* HOME PAGE STYILING*/
-div.townInfo{
-    display: flex;
-    flex-direction: column;
+
+div.townInfo section:nth-child(3){
+    flex-direction: row-reverse;
+}
+div.townInfo section:nth-child(3) img{
+margin-right: 15%;
+}
+div.townInfo section:nth-child(1) img,
+div.townInfo section:nth-child(2) img{
+    margin-left: 18%;
 }
 div.townInfo section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: row;
 }
-div.townInfo section img{
+div.townInfo p{
+    margin-bottom: 20px;
+}
+
+/*div.townInfo section img{
    grid-column: 2/3;
 }
 div.townInfo section h2,
 div.townInfo section h3,
 div.townInfo section p{
     grid-column: 1/2;
-}
+}*/
 
 
-/*div.townInfo:nth-child(even){
-    flex-direction: row-reverse;
-}
     }

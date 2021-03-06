@@ -241,11 +241,10 @@ em{
 /* HOME PAGE STYILING*/
 
 div.townInfo section{
-    
     width: 100%;
-    max-width: 400px;
     margin: auto;
     margin-bottom: 20px;
+    padding-bottom: 20px;
     text-align: center;
 }
 div.townInfo h2, div.townInfo h3, div.townInfo p{
@@ -271,3 +270,22 @@ div.townInfo img{
     box-shadow: 0 0 30px #333;
     
 }
+div.townInfo{
+    display: flex;
+    flex-direction: column;
+}
+div.townInfo section:nth-child(1){
+    order: 3;
+
+}
+div.townInfo section:nth-child(2){
+    order: 1;
+    border-bottom: 3px solid #2019A2;
+
+}
+div.townInfo section:nth-child(3){
+    order: 2;
+    border-bottom: 3px solid #2019A2;
+
+}
+

@@ -28,8 +28,33 @@ div.townInfo{
     display: flex;
     flex-direction: row;
 }
-div.townInfo section:nth-child(even){
+div.townInfo section:nth-child(3){
     border-left: 3px solid #2019A2;
     border-right: 3px solid #2019A2;
+}
+div.townInfo section:nth-child(2){
+    border-bottom: none;
+
+}
+div.townInfo section:nth-child(3){
+    border-bottom: none;
+
+}
+div.townInfo section{
+    display: block;
+    
+}
+div.townInfo p{
+    margin: 3px;
+}
+div.townInfo section:nth-child(3) img{
+    margin-right: auto;
+    }
+    div.townInfo section:nth-child(1) img,
+    div.townInfo section:nth-child(2) img{
+        margin-left: auto;
+    }
+div.townInfo section div{
+margin-bottom: 20px;
 }
 }
