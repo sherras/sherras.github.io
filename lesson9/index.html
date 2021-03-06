@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Heather</title>
+    <meta name="description" content="These are the wireframes for the home page of the Weather Heather.">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<header>
+    <img src="images/weather_logo_not_transparent.png" alt="The Weather Heather Logo"> 
+    <section>
+    <h1>The Weather Heather</h1>
+    <p>Connected through rain and shine.</p>
+</section>
+
+</header>
+<nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776; Menu</button>
+    <ul id="firstNav" class="close">
+        <li ><a href="https://sherras.github.io/lesson5/preston-5.html">Preston Idaho</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li class="active"><a href="https://sherras.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+        <li><a href="https://sherras.github.io/lesson7/gallery-7.html">Gallery</a></li>
+    </ul>
+</nav>
+<body>
+
+    <main>
+        <div class="townInfo">
+        </div>
+    </main>
+    <footer>
+        <h3>Contact Information</h3>
+        <p class="location">&#9906; Location: 1234 S 5th Street </p>
+        <p>	&#x2709; Email: theweatherheather@twh.com</p>
+        <p>&#x260F; Phone: (123)456-7890</p>
+        <img src="images/map.png" alt="map">
+        <p>&copy;<span id="year"></span> | The Weather Heather | Sherra Swapp | <span id="currentdate"></span></p>
+        <div class="social">
+        <a href="facebook.com" target="blank"><img src="images/facebook.png" alt="facebook"></a>
+        <a href="instagram.com" target="blank"><img src="images/insta.png" alt="facebook"></a>
+        <a href="youtube.com" target="blank"><img src="images/youtube.png" alt="youTube"></a>
+        </div>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
