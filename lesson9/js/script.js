@@ -89,7 +89,7 @@ fetch(requestURL)
       rain.textContent = `Annual Rain Fall: ${town.averageRainfall}`;
       pimg.setAttribute('src', `images/${town.photo}`);
       pimg.setAttribute('alt', `${town.name} image.`);
-      
+      pimg.setAttribute("loading", "lazy");
       
       townData.append(h2);
       townData.appendChild(motto);
