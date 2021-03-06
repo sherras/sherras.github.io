@@ -72,6 +72,7 @@ fetch(requestURL)
    const townInfo =  document.querySelector('.townInfo')
 
     towns.forEach(town => {
+      if(town.name == 'Preston' || town.name == 'Soda Springs' || town.name == 'Fish Haven'){
       let card = document.createElement('section');
       let h2 = document.createElement('h2');
       let pimg = document.createElement('img');
@@ -96,6 +97,8 @@ fetch(requestURL)
       card.appendChild(rain);
       card.append(pimg);
       townInfo.append(card);
+      }
+      
   });
 });
 

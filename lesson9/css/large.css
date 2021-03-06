@@ -23,4 +23,13 @@
     .picture p{
         padding-top: 5px;
     }
+/* HOME PAGE STYILING*/
+div.townInfo{
+    display: flex;
+    flex-direction: row;
+}
+div.townInfo section:nth-child(even){
+    border-left: 3px solid #2019A2;
+    border-right: 3px solid #2019A2;
+}
 }

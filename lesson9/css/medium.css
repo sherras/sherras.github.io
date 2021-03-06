@@ -94,4 +94,14 @@ text-align: center;
 .picture img{
 max-width: 400px;
 }
+
+/* HOME PAGE STYILING*/
+div.townIfo section{
+    display: flex;
+    flex-direction: row;
+}
+
+div.townInfo:nth-child(even){
+    flex-direction: row-reverse;
+}
     }
