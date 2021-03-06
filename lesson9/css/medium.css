@@ -96,12 +96,26 @@ max-width: 400px;
 }
 
 /* HOME PAGE STYILING*/
-div.townIfo section{
+div.townInfo{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+div.townInfo section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+div.townInfo section img{
+   grid-column: 2/3;
+}
+div.townInfo section h2,
+div.townInfo section h3,
+div.townInfo section p{
+    grid-column: 1/2;
 }
 
-div.townInfo:nth-child(even){
+
+/*div.townInfo:nth-child(even){
     flex-direction: row-reverse;
 }
     }
