@@ -8,7 +8,7 @@ fetch(apiURL)
    temperature.textContent = jsObject.main.temp;
    
    const current = document.querySelector('#current');
-   current.textContent = jsObject.weather.main;
+   current.textContent = jsObject.weather[0].main;
    
    const humidity = document.querySelector('#humidity');
    humidity.textContent = jsObject.main.humidity;
@@ -24,5 +24,5 @@ fetch(apiURL)
    
    const imagesrc = `https://openweathermap.org/img/w/'${jsObject.weather[0].icon}.png`;  // note the concatenation
    const desc = jsObject.weather[0].description;  // note how we reference the weather array
-   
+   windChill();
   });
