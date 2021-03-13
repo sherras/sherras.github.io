@@ -11,17 +11,17 @@ fetch(apiURL2)
   //feed the filter a condition: it has to be 1800 dt_txt and see if it includes use includes(18:00)
 //loop through each of the forecast days
 const theFive = jsObject.list.filter(list.dt_txt == '18:00:00');
-thefive.foreach(x=>{
+theFive.foreach(x=>{
 
-})
-    let d = new Date(jsObject.list[4].dt_txt)
 
-    document.getElementById(`dayofweek${day+1}`).textContent = dayofWeek[d.getDay()];
+    let d = new Date(x.dt_txt)
+
+    document.getElementById(`dayofWeek${day+1}`).textContent = dayofWeek[d.getDay()];
     document.getElementById(`forecast${day+1}`).textContent = jsObject.list[4].main.temp;
 
 
 
 
     
-   
+  });
   });
