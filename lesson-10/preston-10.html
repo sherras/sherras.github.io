@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Heather</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta name="description" content="The Weather Heather is place for you to come and see what the weather is as well as see what people in the community are doing bout it. It is also a place for you to come and bounce ideas of off each other so we can make it through the weather together.">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  
+</head>
+<body onload="datesTimes(); banner(); windChill()">
+   
+    <div id="bannerFri" class="hide">Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+        <img src="images/weather_logo_not_transparent.png" alt="The Weather Heather Logo"> 
+        <section>
+        <h1>The Weather Heather</h1>
+        <p>Connected through rain and shine.</p>
+    </section>
+ 
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="firstNav" class="close">
+            <li class="active"><a href="preston-4.html">Preston Idaho</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    
+<main>
+    <h1>Preston Idaho</h1>
+    <div class="heroDiv">
+   <div class="heroImg">
+      <picture class="townPic">
+        <source media="(max-width: 400px)" srcset="images/small.jpg">
+        <source media="(max-width: 1000px)" srcset="images/medium.jpg">
+        <source media="(max-width: 1800px)" srcset="images/large.jpg">
+        <img src="images/blue_sky1300.jpg" alt="Beautiful Weather">
+      </picture>
+
+    </div>
+    <section class="weatherSum">
+        <div class='wInfo'>
+        <h2>Weather Summary</h2>
+        <p>Current: <span id="current"></span></p>
+        <p>Temperature: <span id="temp"></span>°F</p>
+        <p>High: <span id="high"></span>°F</p>
+        <p>Low: <span id="low"></span>°F</p>
+        <p>Wind Chill: <span id="windC"></span></p>
+        <p>Humidity: <span id="humidity"></span></p>
+        <p>Wind Speed: <span id="speed"></span> mph</p>
+    </div>
+    </section>
+    </div>
+    <div class="fiveDay">
+        <span>
+        <span id="dayofWeek1"></span>
+            <img src="images/sun.png" alt="sun">
+            <span id="forecast1">°F</span>
+        </span>
+        <span>
+            <span id="dayofWeek2"></span>
+                <img src="images/sun.png" alt="sun">
+                <span id="forecast2">°F</span>
+         </span>
+         <span>
+        <span id="dayofWeek3"></span>
+            <img src="images/sun.png" alt="sun">
+            <span id="forecast3">°F</span>
+        </span>
+        <span>
+            <span id="dayofWeek4"></span>
+                <img src="images/sun.png" alt="sun">
+                <span id="forecast4">°F</span>
+        </span>
+        <span>
+        <span id="dayofWeek5"></span>
+                <img src="images/sun.png" alt="sun">
+                <span id="forecast5">°F</span>
+            </span>
+         
+    </div>
+    <div class="article">    
+    <h2>Article</h2>
+    <img src="images/article-pic.jpg" alt='Rainbow'>
+
+    <p>Lorem ipsum dolor sit amet, cum hinc eros mnesarchum no, rebum facilis gubergren usu ut, sea ut dicam numquam. An doctus sanctus denique nam, imperdiet interpretaris pro in. Quis iriure usu at, vix ad alia ipsum. Est eu legere periculis repudiare, has eu idque insolens honestatis. Te usu gubergren consequuntur mediocritatem, ea clita equidem principes duo, cu prima liberavisse contentiones vis.
+
+        Ad saperet facilisi atomorum mea, cu tibique honestatis sadipscing vix. An his augue exerci iisque. Duo ex cetero dolorem efficiendi, cu has cibo corpora forensibus, vidisse epicurei vim ne. Dicta discere delicata no his. Nam consul malorum cu, duo eius corpora antiopam ne.
+        
+        Quo sale suscipit no. Id has officiis omittantur reprehendunt, pro sumo iudicabit ex. Ut unum sonet nostro pri, at sea error tamquam expetendis. Nec delectus principes an. Eos ut quem accumsan, lorem adipisci ne ius. Sit eu movet dolorum, qui cu augue concludaturque.
+        
+        Ius ad dicunt alienum conceptam. Pri ei sumo qualisque, vis ut oporteat gubergren. Impedit facilisis scribentur at mel, quidam philosophia suscipiantur vim an. Id alii omittantur pri. Vim doctus salutandi ne, vim omnes viderer et. Pri ei aeque propriae referrentur.
+        
+        Quem maluisset adversarium ne sed, ridens oporteat has ut, at epicuri ponderum salutandi mei. Oblique consetetur cu nam. Dicunt delectus at cum. Mel te iisque consulatu definitiones, id vel albucius consequat, ei meliore facilisi mediocritatem vim. Vel ut mucius pertinacia, ad eos imperdiet interesset. Ius oratio aliquando omittantur eu, sea inimicus suscipiantur eu.
+
+        </p>
+    </div>
+
+</main>
+
+<footer>
+    <h3>Contact Information</h3>
+    <p class="location">&#9906; Location: 1234 S 5th Street </p>
+    <p>	&#x2709; Email: theweatherheather@twh.com</p>
+    <p>&#x260F; Phone: (123)456-7890</p>
+    <img src="images/map.png" alt="map">
+    <p>&copy;<span id="year"></span> | The Weather Heather | Sherra Swapp | <span id="currentdate"></span></p>
+    <div class="social">
+    <a href="facebook.com" target="blank"><img src="images/facebook.png" alt="facebook"></a>
+    <a href="instagram.com" target="blank"><img src="images/insta.png" alt="facebook"></a>
+    <a href="youtube.com" target="blank"><img src="images/youtube.png" alt="youTube"></a>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+<script src="js/windchill.js"></script>
+<script src="js/forecast.js"></script>
+<script src="js/forecast2.js"></script>
+</body>
+</html>
