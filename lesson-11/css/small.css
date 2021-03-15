@@ -148,6 +148,14 @@ footer img,
     padding-left: 30px;
     width: 90%;
 }
+footer p.nameInfo{
+    border-top: 5px solid #16B1De;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer h3{
+    padding-top: 20px;
+}
 .location{
     display: none;
 }
