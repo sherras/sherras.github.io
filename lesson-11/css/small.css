@@ -14,6 +14,7 @@ header{
     justify-content: start;
     align-content: center;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 main{
