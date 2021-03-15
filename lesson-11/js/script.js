@@ -48,6 +48,78 @@ function banner(){
         document.getElementById("bannerFri").classList.toggle('hide');
     }
 }
-WebFont.load({google: {families: ['Rubik']}});
+//WebFont.load({google: {families: ['Rubik']}});
+//code below based off of codepen from Brother Blazzard. Thank you!
+function adjustRating(rating){
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
 
 
+
+
+
+//set the JSON souce URL 
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+//use fetch to obatin a promise
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    //console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const towns = jsonObject['towns'];
+//select output location
+   const townInfo =  document.querySelector('.townInfo')
+
+    towns.forEach(town => {
+      if(town.name == 'Preston' || town.name == 'Soda Springs' || town.name == 'Fish Haven'){
+      let card = document.createElement('section');
+      let h2 = document.createElement('h2');
+      let pimg = document.createElement('img');
+      let motto = document.createElement('h3');
+      let yearF = document.createElement('p');
+      let population = document.createElement('p');
+      let rain = document.createElement('p');
+      let townData = document.createElement('div');
+      //use template literals
+      h2.textContent = `${town.name}`;
+      motto.textContent = `${town.motto}`;
+      yearF.textContent = `Year Founded: ${town.yearFounded}`;
+      population.textContent = `Population: ${town.currentPopulation}`;
+      rain.textContent = `Annual Rain Fall: ${town.averageRainfall}`;
+      pimg.setAttribute('src', `images/${town.photo}`);
+      pimg.setAttribute('alt', `${town.name} image.`);
+      pimg.setAttribute("loading", "lazy");
+      
+      townData.append(h2);
+      townData.appendChild(motto);
+      townData.appendChild(yearF);
+      townData.appendChild(population);
+      townData.appendChild(rain);
+      card.append(townData);
+      card.append(pimg);
+      townInfo.append(card);
+      }
+      
+  });
+});
+
+
+  /*  const utah = document.querySelector('.utah');
+    
+    const utahfilter = prophets.filter(x => x.birthplace =="Utah");
+    utahfilter.forEach(prophet => {
+      let card = document.createElement('section');
+      let h2 = document.createElement('h2');
+      let pimg = document.createElement('img');
+      //use template literals
+      h2.innerHTML = `${utahprophet.name} ${utahprophet.lastname}`;
+      pimg.setAttribute('alt,' `Portrait of ${utahprophet.name} who was born in ${utahprophet.birthplace} in the year ${utahprophet.birthdate.substring(utahprophet.birthdate.length - 4)}!`)
+      pimg.style.boxshadow = '0 0 30px #333';
+      pimg.style.width = '200px';
+
+      card.append(h2);
+      utah.append(card);
+      card.append(img);
+
+  });*/
