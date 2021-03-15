@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Heather</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta name="description" content="The Weather Heather is place for you to come and see what the weather is as well as see what people in the community are doing bout it. It is also a place for you to come and bounce ideas of off each other so we can make it through the weather together.">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> 
+   <script src="js/script.js"></script>
+</head>
+<body onload="datesTimes(); banner();">
+   
+    <div id="bannerFri" class="hide">Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+        <img src="images/weather_logo_not_transparent.png" alt="The Weather Heather Logo"> 
+        <section>
+        <h1>The Weather Heather</h1>
+        <p>Connected through rain and shine.</p>
+    </section>
+ 
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="firstNav" class="close">
+            <li ><a href="https://sherras.github.io/lesson-11/index.html">Home</a></li>
+            <li ><a href="https://sherras.github.io/lesson-11/preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="https://sherras.github.io/lesson-11/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://sherras.github.io/lesson-11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+<main>
+<h1>Storm Center Report</h1>
+<form method="GET" action="https://sherras.github.io/lesson8/thanks.html">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label class="first"> Full Name*<input type="text" name="fullname" pattern="[a-zA-Z -.'']{5,}" required></label>
+        <label class="first"> Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+        <label class="first"> Phone Number*<input type="tel" name="phone" required></label>
+        <label class="first"> Zip Code*<input type="number" name="zip" required></label>
+    </fieldset>
+    <fieldset>
+        <legend>Storm Information</legend>
+        <label class="first"> Storm Date<input type="date" name="date"></label>
+        
+        <label class="first"> Storm Type<input list="stormType" name="storm">
+            <datalist id="stormType">
+                <option value="Flash Flood">Flash Flood</option>
+                <option value="Hail">Hail</option>
+                <option value="Hurricane">Hurricane</option>
+                <option value="Thunderstorm">Thunderstorm</option>
+                <option value="Tornado">Tornado</option>
+            </datalist>
+        </label>
+        <!--Thank you Brother Blazzard for the codepen to reference for the code below for the range, that was neat-->
+        <label class="slider">Storm Severity<input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="severity">
+            <span id="ratingvalue">5</span>
+        </label>
+            <datalist id="tickmarks">
+                <option value="0"></option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+            </datalist>
+        <label class="first">Storm Region<select name="region" placeholder="Select Region...">
+            <option value="" disabled selected>Select Region...</option>
+            <option value="Preston">Preston</option>
+            <option value="Soda Springs">Soda Springs</option>
+            <option value="Fish Haven">Fish Haven</option>
+        </select>
+        </label>
+       <div class="userD"> User In-Danger Level</div>
+        <label class="side"> <input type="radio" name="danger" value="yes"> Yes</label>
+        <label class="side">  <input type="radio" name="danger" value="maybe"> Maybe</label>
+        <label class="side">  <input type="radio" name="danger" value="no"> No</label>
+        <div class="comment">Additional Comments:</div>
+        <label class="first">
+            <textarea name="comments" rows="4" cols="50"></textarea>
+        </label>
+    </fieldset>
+    <input type="submit" name='report' value="Report My Storm" class="submitBtn">
+</form>
+</main>
+
+<footer>
+    <h3>Contact Information</h3>
+    <p class="location">&#9906; Location: 1234 S 5th Street </p>
+    <p>	&#x2709; Email: theweatherheather@twh.com</p>
+    <p>&#x260F; Phone: (123)456-7890</p>
+    <img src="images/map.png" alt="map">
+    <p>&copy;<span id="year"></span> | The Weather Heather | Sherra Swapp | <span id="currentdate"></span></p>
+    <div class="social">
+    <a href="facebook.com" target="blank"><img src="images/facebook.png" alt="facebook"></a>
+    <a href="instagram.com" target="blank"><img src="images/insta.png" alt="facebook"></a>
+    <a href="youtube.com" target="blank"><img src="images/youtube.png" alt="youTube"></a>
+    </div>
+</footer>
+</body>
+</html>

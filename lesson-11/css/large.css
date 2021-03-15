@@ -1,0 +1,17 @@
+@media only screen and (min-width: 1140px){
+    nav ul{
+        margin-left: 13%;
+      }
+   header img{
+    margin-left: 13%;
+   }
+   
+    
+    main, 
+    footer{
+        width: 70%;
+    }
+    main{
+        margin:auto;
+    }
+}
