@@ -101,6 +101,7 @@ header h1{
 }
 header p {
     padding: 0;
+    padding-left: 5px;
     margin: 0;
 }
 h1,
