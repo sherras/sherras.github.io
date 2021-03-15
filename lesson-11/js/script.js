@@ -48,7 +48,7 @@ function banner(){
         document.getElementById("bannerFri").classList.toggle('hide');
     }
 }
-//WebFont.load({google: {families: ['Rubik']}});
+WebFont.load({google: {families: ['Rubik']}});
 //code below based off of codepen from Brother Blazzard. Thank you!
 function adjustRating(rating){
     document.getElementById("ratingvalue").innerHTML = rating;
