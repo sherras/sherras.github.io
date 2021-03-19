@@ -308,6 +308,15 @@ div.townInfo section:nth-child(3){
     border-bottom: 3px solid #2019A2;
 
 }
+.wInfo p{
+    text-align: center;
+}
+.wInfo{
+    border: 3px solid #2019A2;
+    max-width: 200px;
+    margin:0 auto;
+    background-color: #16afde2f;
+}
 /* Form CSS */
 form{
     margin: 0 auto;
@@ -423,4 +432,7 @@ div.thanks span.check{
 }
 .townEvents p{
     text-align: center;
+}
+.homArticle h2{
+    text-align: start;
 }
