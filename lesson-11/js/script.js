@@ -41,13 +41,7 @@ function datesTimes(){
     document.getElementById('year').innerHTML = newYear;
 }
 
-function banner(){
-    let d = new Date();
-    let day = d.getDay();
-    if (day == 5){
-        document.getElementById("bannerFri").classList.toggle('hide');
-    }
-}
+
 WebFont.load({google: {families: ['Rubik']}});
 //code below based off of codepen from Brother Blazzard. Thank you!
 function adjustRating(rating){
