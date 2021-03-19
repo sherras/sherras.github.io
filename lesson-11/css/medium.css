@@ -129,6 +129,10 @@ div.townInfo section{
 div.townInfo p{
     margin-bottom: 20px;
 }
+.fiveDayHead{
+    text-align: center;
+    
+}
 
 /*div.townInfo section img{
    grid-column: 2/3;

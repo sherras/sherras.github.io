@@ -18,7 +18,7 @@ theFive.forEach(x=>{
     let d = new Date(x.dt_txt);
 //console.log(x.dt_txt);
     document.getElementById(`dayofWeek${day+1}`).textContent = dayofWeek[d.getDay()];
-    document.getElementById(`forecast${day+1}`).textContent = x.main.temp;
+    document.getElementById(`forecast${day+1}`).textContent = x.main.temp + '°F';
     let iconID = x.weather[0].icon;
     document.getElementById(`icon${day + 1}`).src = `https://openweathermap.org/img/wn/${iconID}@2x.png`;
 day++;

@@ -11,7 +11,7 @@ fetch(apiURL)
    current.textContent = jsObject.weather[0].main;
    
    const humidity = document.querySelector('#humidity');
-   humidity.textContent = jsObject.main.humidity;
+   humidity.textContent = jsObject.main.humidity + '%';
    
    const speed = document.querySelector('#speed');
    speed.textContent = jsObject.wind.speed;
