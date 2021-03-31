@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tucumcari Chamber of Commerce</title>
+    <meta name="description" content="This is the home page for the Tucumcari Chamber of Commerce. It will have images of Tucumcari, company ads, contact info, events, weather, our purpose, and a call to action. ">
+    <link rel="shortcut icon" href="images/favicon16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="datesTimes();">
+
+<header>
+    <img src="images/tuclogo.png" alt="Tucumcari Logo"> 
+    <section>
+    <h1>Tucumcari Chamber of Commerce</h1>
+    <p>Here for your success!</p>
+</section>
+</header>
+
+<nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="firstNav" class="close">
+        <li class="navActive"><a href="https://sherras.github.io/final/index.html">Home</a></li>
+        <li ><a href="https://sherras.github.io/final/tucumcari.html">Tucumcari</a></li>
+        <li><a href="https://sherras.github.io/final/join.html">Join</a></li>
+        <li><a href="https://sherras.github.io/final/directory.html">Directory</a></li>
+        <li ><a href="https://sherras.github.io/final/contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <main>
+    <h1>Home</h1>
+
+        <div class="heroImgDiv">
+         <div class="heroImgSlide">
+
+            <div class="slideFade">
+                <div class="numText">1 / 3</div>
+                <img src="images/tuc-hero-1000.png">
+            </div>
+            <div class="slideFade">
+                <div class="numText">2 / 3</div>
+                <img src="images/route-66-1000.png">
+            </div>
+            <div class="slideFade">
+                <div class="numText">3 / 3</div>
+                <img src="images/old-house-1000.png">
+            </div>
+            <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div class="slideDots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        </div>
+
+        <div class="townInfo">
+        </div>
+        <div class="homeArticle">    
+            <h2></h2>
+            <p>We are so excited to have you here with us! Please enjoy this webiste! We promise to keep you up to date on the current weather conditions, as well as help you know what weather conditions may be for these areas of Idaho for the next five days. The towns that we are proud to call home are Preston, Soda Springs, and Fish Haven. These beautiful towns of Idaho are wonderful places to live and visit. If you never have been to them before please check them out and take a look at the events that are coming up for them. Preston is our beautiful little farm town, if you are looking for a great hometown rural feel, a place to get away and relax preston is the town to go to. Do you love the adventures of hiking up a cold mountain just to get to a warm hot spring and enjoy the different aspects of nature? Soda Springs would be the place to be. Are you a fish lover and want to get catch your self some big ones? Check out Fish Haven! Be sure to look at the weather and plan accordingly! We would love to see you here. Welcome to our Idaho family!
+                </p>
+            </div>
+    </main>
+    <footer>
+        <h3>Contact Information</h3>
+        <p class="location">&#x27A9; Address: 404 West Route 66 <br> PO Drawer E <br>Tucumcari, NM 88401 </p>
+        <p>	&#x2709; Email:chamber@tucumcarinm.com</p>
+        <p>&#x2706; Phone: 575-461-1694</p>
+        <p> &#x270E; Fax: 575-461-3884</p>
+        
+        
+        <div class="socialIcons">
+        <a href="facebook.com" target="blank"><img src="images/iconfinder_facebook.png" alt="facebook"></a>
+        <a href="instagram.com" target="blank"><img src="images/iconfinder_instagram.png" alt="instagram"></a>
+        <a href="youtube.com" target="blank"><img src="images/iconfinder_youtube.png" alt="youTube"></a>
+        </div>
+        <p class="nameInfo">&copy;<span id="year"></span> | The Weather Heather | Sherra Swapp | <span id="currentdate"></span></p>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/slides.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
