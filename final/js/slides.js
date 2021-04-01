@@ -20,3 +20,4 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += "active";
 }
+ // Code above is has references to: https://www.w3schools.com/howto/howto_js_slideshow.asp
