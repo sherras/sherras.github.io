@@ -8,7 +8,7 @@ main{
     background-color: white;
     width: 80%;
     margin: auto;
-    padding: 20px;
+    
     margin-top: 15px;
 }
 h1, h2, h3{
@@ -80,6 +80,73 @@ nav button:hover{
     transition: 0.5s;
     border-radius: 10px 10px 10px 10px;
 }
+/*---- MAIN ----*/
+.join button{
+    padding: 10px;
+    background-color: #9105A8;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 200px;
+    box-shadow: #ccc 5px 7px 5px;
+    margin-bottom: 20px;
+}
+
+.join button:hover{
+    background-color:#FFE500;
+    color:#4C00B8;
+    transition: 0.5s;
+    
+}
+.vision{
+    padding: 20px;
+}
+/*---- BUSINESS HIGHLIGHTS ----*/
+.businessAds{
+    background-color:#4C00B8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.businessAds h2{
+    color: white;
+    
+}
+.busCard{
+border: 5px solid #9105A8;
+border-radius: 20px;
+padding: 10px;
+background-color:white;
+margin:auto;
+margin-top: 20px;
+margin-bottom: 20px;
+width: 100%;
+max-width: 415px;
+}
+.busCard img{
+    width: 100%;
+    max-width: 400px;
+    box-shadow: #ccc 5px 7px 5px;
+}
+
+/*---- WEATHER ----*/
+.threeDay{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.threeDay img{
+    width: 100%;
+    max-width: 50px;
+    display: block;
+    margin: auto;
+}
+.threeDay span.days{
+    border: 2px solid #9105A8;
+    width: 100px;
+    margin: auto;
+    text-align: center; 
+}
 
 /*---- FOOTER ----*/
 footer{
@@ -132,7 +199,7 @@ iframe{
     
 }
 
-/*---- SLIDESHOW CSS ----*/
+/*---- SLIDESHOW CSS ----
 .heroImgDiv{
     max-width: 1000px;
     position: relative;

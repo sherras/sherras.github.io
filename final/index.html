@@ -14,6 +14,8 @@
 </head>
 
 <body onload="datesTimes();">
+    
+    <div id="weatherAlerts" class="hide"></div>
 
 <header>
     <img src="images/tuclogo.png" alt="Tucumcari Logo"> 
@@ -63,13 +65,71 @@
         </div>
         </div>
 
-        <div class="townInfo">
-        </div>
-        <div class="homeArticle">    
-            <h2>Article</h2>
-            <p>We are so excited to have you here with us! Please enjoy this webiste! We promise to keep you up to date on the current weather conditions, as well as help you know what weather conditions may be for these areas of Idaho for the next five days. The towns that we are proud to call home are Preston, Soda Springs, and Fish Haven. These beautiful towns of Idaho are wonderful places to live and visit. If you never have been to them before please check them out and take a look at the events that are coming up for them. Preston is our beautiful little farm town, if you are looking for a great hometown rural feel, a place to get away and relax preston is the town to go to. Do you love the adventures of hiking up a cold mountain just to get to a warm hot spring and enjoy the different aspects of nature? Soda Springs would be the place to be. Are you a fish lover and want to get catch your self some big ones? Check out Fish Haven! Be sure to look at the weather and plan accordingly! We would love to see you here. Welcome to our Idaho family!
+        <section class="vision">    
+            <h2>Our Vision</h2>
+            <p>We as a the Tucumcari Chamber of Commerce are here to help and support YOU! We strive to help this wonderful city and the businesses here thrive. With this as our goal, we do all we can to be here for you. 
                 </p>
+            
+            <div class="join">
+                <h2>Join Us!</h2>
+                <p>We would love for you to take a part in this wonderful cause with us!</p>
+                <button onclick="window.location.href='https://sherras.github.io/final/join.html';"> Join</button>
             </div>
+        </section>
+
+            <section class="businessAds">
+                <h2>Business Highlights</h2>
+                <div class="busCard">
+                <h3><a href="https://roadrunnerlodge.com/" target="_blank_">The Roadrunner Lodge</a></h3>
+                <img src="images/roadrunner-lodge.png" title="Image credt: Roadrunner Lodge Motel">
+                <p>Come get a true Route 66 experience by staying at this lovingly restored 1960's motel. </p>
+                </div>
+                <div class="busCard">
+                    <h3><a href="https://tee-pee-curios.square.site/" target="_blank_">Tee Pee Curious</a></h3>
+                    <img src="images/tee-pee-curios.png" title="Image credit: roadtrippers.com" alt="Picture of Tee Pee Curios">
+                    <p>Visit the last original curio shop in New Mexico! You won't regret it!</p>
+                </div>
+                <div class="busCard">
+                    <h3><a href="https://www.delsrestaurant.com/" target="_blank_">Del's Restaurant</a></h3>
+                    <img src="images/dels.png" title="Image credit: tripadvisor.com" >
+                <p>Del's,established in 1956, is a Route 66 favorite! Stop in for some DELicious food! </p>
+                </div>
+            </section> 
+
+            <section class="events">
+                <h2>Upcoming Events in Tucumcari</h2>
+                <p>May 6-8: Rawhide Days</p>
+                <p>July 4: Independence Day Parade</p>
+                <p>August 20-21: Ultimate Frisbee Competition</p>
+            </section>
+
+            <section class="weather">
+                <div class="current">
+                <h2>Current Weather</h2>
+                <p>Condition:<span class="condition"></span></p>
+                <p>Temperature:<span class="temperature"></span></p>
+                <p>Humidity:<span class="humidity"></span></p>
+                </div>
+                
+                <div class="threeDay">
+                    <h2>Three Day Forecast</h2>
+                    <span class="days">
+                        <span id='dayofWeek1'></span>
+                        <img id='icon1' src="images/cloud.png" alt='Weather Icon'>
+                        <span id="forecast1"> °F</span>
+                    </span>
+                    <span class="days">
+                        <span id='dayofWeek2'></span>
+                        <img id='icon2' src="images/cloud.png" alt='Weather Icon'>
+                        <span id="forecast2"> °F</span>
+                    </span>
+                    <span class="days">
+                        <span id='dayofWeek3'></span>
+                        <img id='icon3' src="images/cloud.png" alt='Weather Icon'>
+                        <span id="forecast3"> °F</span>
+                    </span>
+                </div>
+            </section>
     </main>
     <footer>
         <div class="contactInfo">
