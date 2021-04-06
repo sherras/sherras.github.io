@@ -11,12 +11,12 @@ fetch(apiURL2)
   //feed the filter a condition: it has to be 1800 dt_txt and see if it includes use includes(18:00)
 //loop through each of the forecast days
 const theFive = jsObject.list.filter((x) => x.dt_txt.includes('18:00:00'));
-//console.log(theFive);
+console.log(theFive);
 theFive.forEach(x=>{
 
 
     let d = new Date(x.dt_txt);
-//console.log(x.dt_txt);
+console.log(x.dt_txt);
     document.getElementById(`dayofWeek${day+1}`).textContent = dayofWeek[d.getDay()];
     document.getElementById(`forecast${day+1}`).textContent = x.main.temp + '°F';
     let iconID = x.weather[0].icon;

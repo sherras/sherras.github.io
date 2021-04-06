@@ -14,11 +14,16 @@
 </head>
 
 <body onload="datesTimes();">
-    
+    <section class="weatherBanner">
     <div id="weatherAlerts" class="hide"></div>
-
+    <button onclick="closeAlert()">X</button>
+</section>
 <header>
-    <img src="images/tuclogo.png" alt="Tucumcari Logo"> 
+    <picture class="logo">
+        <source media='(max-width: 800px)'srcset="images/tuclogo-200.png" alt="Tucumcari Logo"> 
+        <source media='(max-width: 1000px)'srcset="images/tuclogo.png" alt="Tucumcari Logo">
+        <img src="images/tuclogo.png" alt='Logo'>
+    </picture> 
     <section>
     <h1>Tucumcari Chamber of Commerce</h1>
     <p>Here for your success!</p>
@@ -92,7 +97,7 @@
                 <div class="busCard">
                     <h3><a href="https://www.delsrestaurant.com/" target="_blank_">Del's Restaurant</a></h3>
                     <img src="images/dels.png" title="Image credit: tripadvisor.com" >
-                <p>Del's,established in 1956, is a Route 66 favorite! Stop in for some DELicious food! </p>
+                <p>Del's, established in 1956, is a Route 66 favorite! Stop in for some DELicious food! </p>
                 </div>
             </section> 
 
@@ -106,9 +111,9 @@
             <section class="weather">
                 <div class="current">
                 <h2>Current Weather</h2>
-                <p>Condition:<span class="condition"></span></p>
-                <p>Temperature:<span class="temperature"></span></p>
-                <p>Humidity:<span class="humidity"></span></p>
+                <p>Condition: <span class="condition"></span></p>
+                <p>Temperature: <span class="temperature"></span></p>
+                <p>Humidity: <span class="humidity"></span></p>
                 </div>
                 
                 <div class="threeDay">
@@ -116,17 +121,18 @@
                     <span class="days">
                         <span id='dayofWeek1'></span>
                         <img id='icon1' src="images/cloud.png" alt='Weather Icon'>
-                        <span id="forecast1"> °F</span>
+
+                        <span id="forecast1"> </span>
                     </span>
                     <span class="days">
                         <span id='dayofWeek2'></span>
                         <img id='icon2' src="images/cloud.png" alt='Weather Icon'>
-                        <span id="forecast2"> °F</span>
+                        <span id="forecast2"> </span>
                     </span>
                     <span class="days">
                         <span id='dayofWeek3'></span>
                         <img id='icon3' src="images/cloud.png" alt='Weather Icon'>
-                        <span id="forecast3"> °F</span>
+                        <span id="forecast3"> </span>
                     </span>
                 </div>
             </section>
@@ -154,6 +160,9 @@
         </div>
     </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/currentweather.js"></script>
+<script src="js/weatheralert.js"></script>
+<script src="js/threedayforecast.js"></script>
 <script src="js/slides.js"></script>
 <script src="js/script.js"></script>
 </body>

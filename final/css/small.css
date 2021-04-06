@@ -8,7 +8,6 @@ main{
     background-color: white;
     width: 80%;
     margin: auto;
-    
     margin-top: 15px;
 }
 h1, h2, h3{
@@ -17,6 +16,11 @@ h1, h2, h3{
 }
 img{
     width: 100%;
+}
+main p{
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
 }
 
 /*---- HEADER ----*/
@@ -31,7 +35,7 @@ header h1{
     margin-left: 12px;
     margin-right: 15px;
 }
-header img{
+header picture{
     width: 25%;
     min-width: 100px;
     max-width: 200px;
@@ -131,8 +135,8 @@ max-width: 415px;
 
 /*---- WEATHER ----*/
 .threeDay{
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
     padding-bottom: 20px;
 }
 .threeDay img{
@@ -146,6 +150,38 @@ max-width: 415px;
     width: 100px;
     margin: auto;
     text-align: center; 
+}
+.weatherBanner{
+    background-color: #FFE500;
+    color:#4C00B8;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.weatherBanner button{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+    background-color:#4C00B8;
+    color: #FFE500;
+}
+.hide{
+    display: none;
+}
+
+/*---- TUCUMCARI PAGE PHOTO GAL ----*/
+.tucPhotos{
+    display: flex;
+    
+}
+.tucPhotos img{
+    width: 100%;
+    max-width: 300px;
+    
 }
 
 /*---- FOOTER ----*/

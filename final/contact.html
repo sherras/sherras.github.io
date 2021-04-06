@@ -16,7 +16,11 @@
 <body onload="datesTimes();">
 
 <header>
-    <img src="images/tuclogo.png" alt="Tucumcari Logo"> 
+    <picture class="logo">
+        <source media='(max-width: 800px)'srcset="images/tuclogo-200.png" alt="Tucumcari Logo"> 
+        <source media='(max-width: 1000px)'srcset="images/tuclogo.png" alt="Tucumcari Logo">
+        <img src="images/tuclogo.png" alt='Logo'>
+    </picture> 
     <section>
     <h1>Tucumcari Chamber of Commerce</h1>
     <p>Here for your success!</p>

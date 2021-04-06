@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City of Tucumcari</title>
-    <meta name="description" content="This page will be all about Tucumcari. We will have some history, photos, and local events in Tucumcari.">
+    <title>Tucumcari Chamber of Commerce</title>
+    <meta name="description" content="This is the home page for the Tucumcari Chamber of Commerce. It will have images of Tucumcari, company ads, contact info, events, weather, our purpose, and a call to action. ">
     <link rel="shortcut icon" href="images/favicon16.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/small.css">
@@ -14,9 +14,12 @@
 </head>
 
 <body onload="datesTimes();">
-
 <header>
-    <img src="images/tuclogo.png" alt="Tucumcari Logo"> 
+    <picture class="logo">
+    <source media='(max-width: 800px)'srcset="images/tuclogo-200.png" alt="Tucumcari Logo"> 
+    <source media='(max-width: 1000px)'srcset="images/tuclogo.png" alt="Tucumcari Logo">
+    <img src="images/tuclogo.png" alt='Logo'>
+</picture>
     <section>
     <h1>Tucumcari Chamber of Commerce</h1>
     <p>Here for your success!</p>
@@ -26,8 +29,8 @@
 <nav class="clearfix">
     <button onclick="toggleMenu()">&#9776;</button>
     <ul id="firstNav" class="close">
-        <li class="navActive"><a href="https://sherras.github.io/final/index.html">Home</a></li>
-        <li ><a href="https://sherras.github.io/final/tucumcari.html">Tucumcari</a></li>
+        <li ><a href="https://sherras.github.io/final/index.html">Home</a></li>
+        <li class="navActive"><a href="https://sherras.github.io/final/tucumcari.html">Tucumcari</a></li>
         <li><a href="https://sherras.github.io/final/join.html">Join</a></li>
         <li><a href="https://sherras.github.io/final/directory.html">Directory</a></li>
         <li ><a href="https://sherras.github.io/final/contact.html">Contact</a></li>
@@ -35,41 +38,72 @@
 </nav>
 
     <main>
-    <h1>The City of Tucumcari</h1>
+    <h1>The City of Tucumari</h1>
 
         <div class="heroImgDiv">
-         <div class="heroImgSlide">
-
-            <div class="slideFade">
-                <div class="numText">1 / 3</div>
-                <img src="images/tuc-hero-1000.png" alt="Tucumcari Mural">
-            </div>
-            <div class="slideFade">
-                <div class="numText">2 / 3</div>
-                <img src="images/route-66-1000.png" alt="Route 66">
-            </div>
-            <div class="slideFade">
-                <div class="numText">3 / 3</div>
-                <img src="images/old-house-1000.png" alt="Old House in Tucumcari">
-            </div>
-            <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-        <div class="slideDots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+            <picture class="townPic">
+                <source media="(max-width: 400px)" srcset="images/tuc-mountain-400.png">
+                <source media="(max-width: 800px)" srcset="images/tuc-mountain-800.png">
+                <source media="(max-width: 1000px)" srcset="images/tuc-mountain-1000.png">
+                <img src="images/tuc-mountain-1000.png" alt="Tucumcari Mountain">
+              </picture>
         </div>
 
-        <div class="townInfo">
-        </div>
-        <div class="homeArticle">    
-            <h2>Our Vision</h2>
-            <p>Welcome to the Tucumcari Chamber of Commerce website. 
-                </p>
+        <section class="article">    
+            <h2>Tucmcari's History</h2>
+            <p>The town of Tucumcari itself got its start in 1901 as a tent city known first as “Ragtown” and later as “Six Shooter Siding” along the Chicago, Rock Island and Union Pacific Railroad. When the railroad turned the camp into a division point in 1908, the settlement was renamed Tucumcari after the nearby mountain. By 1910, Tucumcari was a major railroad center – complete with roundhouse, depot, and water tower. Not to mention more than 60 thriving businesses.</p>
+    <p>
+    Some of the first businesses to open in 1902 were the Barnes and Rankin furniture store, the A. B. Simpson hardware, A. A. Blankenship’s livery barn, a hotel, and of course the Monarch Saloon. A boarding house operated by Mr. and Mrs. Turner was located at First and Turner. Other businesses were the Pioneer Bakery, Arcade Restaurant, Waldorf-Astoria Hotel with rooms for $2 a day, the Owl Saloon, Weldon and Young Real Estate and Investments, Jackson and Foxworth Lumber Company, and the Exchange Bank. Then there was the Gross Kelly Company of Las Vegas, offering general merchandise, andM. B. Goldenberg’s Mercantile Company. Max Goldenberg’s home was the first permanent home built in Tucumcari, and contained the post office.</p>
+    <p>
+    The birth of Route 66 in 1926 brought new travelers to Tucumcari by the carload. Wagon yards, livery stables, and blacksmith shops were soon replaced with gas stations, motor courts, gift shops and cafes. Today, Tucumcari’s proximity to I-40 continues to attract travelers from all over the country.</p>
+    <p>
+    As the town of Tucumcari continues to evolve, its people remain committed to preserving its rich history while expanding viable economic growth that will sustain future generations.</p>
+    <p>Read full article at: <a href="https://www.tucumcarinm.com/history/#:~:text=The%20town%20of%20Tucumcari%20itself,Tucumcari%20after%20the%20nearby%20mountain.">Tucumcari History</a></p>
+        </section>
+        <section class="tucPhotos">
+            <section class="nature">
+            <h3>Nature</h3>
+            <div class='pic'>
+            <img src="images/cactus.png" alt="Cactus Fruit">
+            Cholla cactus flower
             </div>
+            <div class='pic'>
+            <img src="images/mounatin-star.png" alt="Starry Sky">
+            Tucumcari Mountain with a night sky
+            </div>
+        </section>
+        <section class="agriculture">
+            <h3>Agriculture</h3>
+            <div class='pic'>
+            <img src="images/garden.png" alt="Girl With Watermelon">
+            A watermelon from a local garden
+            </div>
+            <div class='pic'>
+            <img src="images/ristra.png" alt="Man Making Ristras">
+            Homegrown and made ristras
+            </div>
+        </section>
+        <section class="fun">
+            <h3>Fun Things to Do</h3>
+            <div class='pic'>
+            <img src="images/bluegrass.png" alt="Girl With banjo">
+            Local bluegrass club
+            </div>
+            <div class='pic'>
+                <img src="images/frisbee-golf.png" alt="Frisbee Golf">
+                Great frisbee golf course
+                </div>
+            </section>
+
+        </section>
+        <section class="events">
+            <h2>Upcoming Events in Tucumcari</h2>
+            <p>May 6-8: Rawhide Days</p>
+            <p>July 4: Independence Day Parade</p>
+            <p>August 20-21: Ultimate Frisbee Competition</p>
+        </section>
+
+            
     </main>
     <footer>
         <div class="contactInfo">
@@ -94,7 +128,7 @@
         </div>
     </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script src="js/slides.js"></script>
+
 <script src="js/script.js"></script>
 </body>
 </html>
