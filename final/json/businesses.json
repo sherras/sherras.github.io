@@ -1,0 +1,53 @@
+{
+    "businesses":[
+    {   "name": "Blue Swallow Motel" ,
+        "phone":"575-461-9849" ,
+        "email":"blueswallowmotel@gmail.com" ,
+        "address": "815 E Route 66 Tucumcari, NM 88401",
+        "website":"https://blueswallowmotel.com/" ,
+        "logo": ""
+        },
+    {   "name": "Del's Restaurant" ,
+        "phone":"575-461-1740" ,
+        "email":"" ,
+        "address": "1202 E Route 66 Tucumcari, NM 88401",
+        "website":"https://www.delsrestaurant.com/" ,
+        "logo": "https://popmenucloud.com/cdn-cgi/image/width=300,height=300,format=auto,fit=scale-down/vyqmtxef/0186133e-387b-47d5-a190-1d9001b2e452.png"
+        },
+    {   "name": "Lowe's" ,
+        "phone":"575-461-2350" ,
+        "email":"" ,
+        "address": "105 W Tucumcari Blvd Tucumcari, NM 88401",
+        "website":"https://lowesmarket.com/weekly-ad/tucumcari-nm/" ,
+        "logo": "https://lowesmarket.com/wp-content/uploads/2012/11/cropped-logo2.png"
+        },
+    {   "name": "Roadrunner Lodge" ,
+        "phone":"575-282-7866" ,
+        "email":"" ,
+        "address": "1023 E Route 66 Blvd Tucumcari, NM 88401",
+        "website":"https://roadrunnerlodge.com/" ,
+        "logo": "https://i0.wp.com/roadrunnerlodge.com/wp-content/uploads/2020/08/cropped-logo20vfinal.png?fit=1046%2C400&ssl=1"
+        },
+    {   "name": "Sunrise Medical Group, P.C." ,
+        "phone":"575-461-8631" ,
+        "email":"" ,
+        "address": "220 S 3rd St Tucumcari, NM 88401",
+        "website":"https://sunrisemedicalnm.com/tucumcari/" ,
+        "logo": "https://sunrisemedicalnm.com/wp-content/uploads/2019/06/Sunrisemedical-logo-med.png"
+        },
+    {   "name": "Tractor Supply" ,
+         "phone":"575-461-4883" ,
+         "email":"" ,
+         "address": "1401 E Route 66 Blvd Tucumcari, NM 88401",
+         "website":"https://www.tractorsupply.com/tsc/store_Tucumcari-NM-88401_1803" ,
+         "logo": "https://tsc-brand.s3.amazonaws.com/preview/af05b9f9f61b9b78266712c8cd9f2da1.jpg"
+         },
+    {   "name": "Tee Pee Curios" ,
+        "phone":"575-461-3773" ,
+        "email":"teepeecurios@gmail.com" ,
+        "address": "924 E Route 66 Blvd Tucumcari, NM 88401",
+        "website":"https://tee-pee-curios.square.site/" ,
+        "logo": ""
+        }
+    ]
+}
