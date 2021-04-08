@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory</title>
+    <meta name="description" content="This page will contain a directory of the businesses in Tucumcari, as well as some information about each one.">
+    <link rel="shortcut icon" href="images/favicon16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="datesTimes();">
+
+<header>
+    <picture class="logo">
+        <source media='(max-width: 800px)'srcset="images/tuclogo-200.png" alt="Tucumcari Logo"> 
+        <source media='(max-width: 1000px)'srcset="images/tuclogo.png" alt="Tucumcari Logo">
+        <img src="images/tuclogo.png" alt='Logo'>
+    </picture> 
+    <section>
+    <h1>Tucumcari Chamber of Commerce</h1>
+    <p>Here for your success!</p>
+</section>
+</header>
+
+<nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="firstNav" class="close">
+        <li class="navActive"><a href="https://sherras.github.io/final/index.html">Home</a></li>
+        <li ><a href="https://sherras.github.io/final/tucumcari.html">Tucumcari</a></li>
+        <li><a href="https://sherras.github.io/final/join.html">Join</a></li>
+        <li><a href="https://sherras.github.io/final/directory.html">Directory</a></li>
+        <li ><a href="https://sherras.github.io/final/contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <main>
+    <h1>Thank you!</h1>
+      <p>Thank you for joining the Tucumcari Chamber of Commerce. We are excited to have you with us!</p>  
+        
+    </main>
+    <footer>
+        <div class="contactInfo">
+        <h3>Contact Information</h3>
+        <p class="location">&#x27A9; Address: 404 West Route 66 <br> PO Drawer E <br>Tucumcari, NM 88401 </p>
+        <p>	&#x2709; Email: chamber@tucumcarinm.com</p>
+        <p>&#x2706; Phone: 575-461-1694</p>
+        <p> &#x270E; Fax: 575-461-3884</p>
+        <div class="socialIcons">
+            <a href="https://facebook.com" target="blank"><img src="images/iconfinder_facebook.png" alt="facebook"></a>
+            <a href="https://instagram.com" target="blank"><img src="images/iconfinder_instagram.png" alt="instagram"></a>
+            <a href="https://youtube.com" target="blank"><img src="images/iconfinder_youtube.png" alt="youTube"></a>
+            </div>
+    </div>
+        
+        <div class="footRunner">
+        <p class="nameInfo">&copy;<span id="year"></span> | Tucumcari Chamber of Commerce | Designed by Sherra Swapp | <span id="currentdate"></span></p>
+        </div>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/json.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

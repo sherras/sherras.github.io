@@ -9,5 +9,5 @@ console.log(jsObject);
 });
 
 function closeAlert(){
-   document.getElementById("weatherAlerts").classList.toggle('hide');
+   document.getElementById("theAlerts").classList.toggle('hide');
 }

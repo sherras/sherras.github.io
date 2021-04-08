@@ -8,6 +8,7 @@ main{
     background-color: white;
     margin: auto;
     margin-top: 15px;
+    padding-bottom: 20px;
 }
 h1, h2, h3{
     font-family: "Roboto Slab", serif;
@@ -113,6 +114,7 @@ nav button:hover{
     margin-top: 20px;
     padding-bottom: 20px;
     background-color:#ffe60042;
+    border-radius: 20px;
 }
 /*---- BUSINESS HIGHLIGHTS ----*/
 .businessAds{
@@ -146,6 +148,12 @@ max-width: 415px;
    display: flex;
    flex-direction: column;
     padding-bottom: 20px;
+    border: 3px solid #9105A8;
+    border-radius: 20px;
+    background-color: #07d9c459;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
 }
 .threeDay img{
     width: 100%;
@@ -154,7 +162,8 @@ max-width: 415px;
     margin: auto;
 }
 .threeDay span.days{
-    border: 2px solid #9105A8;
+    border: 3px solid #9105A8;
+    background-color:white;
     width: 100px;
     margin: auto;
     text-align: center; 
@@ -168,20 +177,22 @@ max-width: 415px;
     justify-content: center;
 }
 .weatherBanner button{
-    padding: 10px;
+    padding: 5px;
     border: none;
     border-radius: 20px;
-    margin-right: 5px;
-    height: 40px;
-    width: 40px;
     background-color:#4C00B8;
     color: #FFE500;
+    position: absolute;
+    top: 1rem;
+    right:2rem;
+    font-size: .8rem;
 }
 .hide{
-    /*display: none;*/
+    display: none;
 }
 .current{
     border: 3px solid #9105A8;
+    border-radius: 20px;
     background-color: #07d9c459;
     width: 50%;
     margin: auto;
