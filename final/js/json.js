@@ -6,10 +6,10 @@ fetch(businessReq)
 })
 .then(function (jsonObject){
     console.table(jsonObject);
-    const businesses = jsonObject ['businesses'];
+    const stores = jsonObject ['stores'];
     const cards = document.querySelector('.busCards')
 
-    businesses.forEach(business => {
+    stores.forEach(store => {
         let card = document.createElement('section');
         let h2 = document.createElement('h2');
         let logo = document.createElement('img');
@@ -18,13 +18,13 @@ fetch(businessReq)
         let website = document.createElement('p');
         let address = document.createElement('p');
 
-        h2.textContent = `${business.name}`;
-        logo.setAttribute('src', business.logo);
-        logo.setAttribute('alt', `${business.name} Logo`);
-        phone.textContent = `${business.phone}`;
-        email.textContent = `${business.email}`;
-        website.textContent = `${business.website}`;
-        address.textContent = `${business.address}`;
+        h2.textContent = `${store.name}`;
+        logo.setAttribute('src', store.logo);
+        logo.setAttribute('alt', `${store.name} Logo`);
+        phone.textContent = `${store.phone}`;
+        email.textContent = `${store.email}`;
+        website.textContent = `${store.website}`;
+        address.textContent = `${store.address}`;
 
         card.append(h2);
         card.append(logo);
