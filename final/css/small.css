@@ -6,7 +6,6 @@ body{
 }
 main{
     background-color: white;
-    width: 80%;
     margin: auto;
     margin-top: 15px;
 }
@@ -95,6 +94,7 @@ nav button:hover{
     max-width: 200px;
     box-shadow: #ccc 5px 7px 5px;
     margin-bottom: 20px;
+    margin-top: 15px;
 }
 
 .join button:hover{
@@ -105,6 +105,14 @@ nav button:hover{
 }
 .vision{
     padding: 20px;
+}
+.events{
+    border: 10px double #9105A8;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    background-color:#ffe60042;
 }
 /*---- BUSINESS HIGHLIGHTS ----*/
 .businessAds{
@@ -170,7 +178,15 @@ max-width: 415px;
     color: #FFE500;
 }
 .hide{
-    display: none;
+    /*display: none;*/
+}
+.current{
+    border: 3px solid #9105A8;
+    background-color: #07d9c459;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 /*---- TUCUMCARI PAGE PHOTO GAL ----*/
@@ -189,7 +205,6 @@ footer{
     background-color: #9105A8;
     color: white;
     margin: auto;
-    width: 80%;
     padding: 20px;
     margin-top: 15px;
     display: grid;
@@ -227,7 +242,7 @@ padding: 1rem;
     grid-row: 3/4;
     
     margin-top: 15px;
-    margin-bottom: -20px;
+    
     
 }
 iframe{
@@ -235,58 +250,3 @@ iframe{
     
 }
 
-/*---- SLIDESHOW CSS ----
-.heroImgDiv{
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-.slideFade{
-    display: none;
-}
-.previous, .next{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: #07D9C4;
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-.next{
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-.previous:hover, .next:hover{
-    background-color:#07d9c43f
-}
-.numText{
-    color: white
-}
-.dot{
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-.active, .dot:hover{
-    background-color:#07d9c43f;
-}
-.fade{
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@-webkit-keyframes fade{
-    from {opacity: .4}
-    to {opacity:1}
-}

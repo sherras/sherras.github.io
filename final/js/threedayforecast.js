@@ -2,14 +2,13 @@
 fetch(apiURLt)
     .then((response) => response.json())
     .then((jsObject) =>{
-        console.log(jsObject);
 
         let day = 0;
         const dayofWeek =['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
        let i=0;
         for(i=0; i < 3; i++){
             let d = new Date();
-            document.getElementById(`dayofWeek${day+1}`).textContent = dayofWeek[d.getDay()];
+            document.getElementById(`dayofWeek${day+1}`).textContent = dayofWeek[d.getDay() + day +1];
             document.getElementById(`forecast${day+1}`).textContent = Math.ceil(jsObject.daily[day+1].temp.day) + "°F";
             
             let weatherIcon= jsObject.daily[0].weather[0].icon;
