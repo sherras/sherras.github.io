@@ -4,14 +4,14 @@
         "phone":"575-461-9849" ,
         "email":"blueswallowmotel@gmail.com" ,
         "address": "815 E Route 66 Tucumcari, NM 88401",
-        "website":"<a href='https://blueswallowmotel.com/'>https://blueswallowmotel.com/</a>" ,
+        "website":"https://blueswallowmotel.com/'>https://blueswallowmotel.com/" ,
         "logo": ""
         },
     {   "name": "Del's Restaurant" ,
         "phone":"575-461-1740" ,
         "email":"" ,
         "address": "1202 E Route 66 Tucumcari, NM 88401",
-        "website":"<a href='https://www.delsrestaurant.com/'></a>" ,
+        "website":"https://www.delsrestaurant.com/" ,
         "logo": "https://popmenucloud.com/cdn-cgi/image/width=300,height=300,format=auto,fit=scale-down/vyqmtxef/0186133e-387b-47d5-a190-1d9001b2e452.png"
         },
     {   "name": "Lowe's" ,
