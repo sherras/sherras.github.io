@@ -32,6 +32,14 @@ nav button{
     margin-right: 10px;
 }
 
+/*--- DIRECTORY ---*/
+.directory button{
+    display: inline-block;
+}
+.directory div.gridding{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 /*--- WEATHER ---*/
 .weather{
     display: flex;

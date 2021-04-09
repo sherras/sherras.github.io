@@ -10,4 +10,8 @@ main, footer{
     margin: auto;
 }
 
+/*---DIRECTORY---*/
+.directory div.gridding{
+    grid-template-columns: 1fr 1fr 1fr;
+}
 }

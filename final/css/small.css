@@ -82,14 +82,16 @@ nav ul li.navActive a{
     background-color:#FFE500;
     color:#4C00B8;
 }
-nav button{
+nav button,
+.directory button{
     margin: 5px;
     background-color: transparent;
     border: none;
     font-size: 2rem;
     color: white;
 }
-nav button:hover{
+nav button:hover,
+.directory button:hover{
     background-color:#FFE500;
     color: #4C00B8;
     transition: 0.5s;
@@ -184,6 +186,17 @@ font-size: 1.5rem;
 .busCards section a:hover{
     font-size: 1.25rem;
     color:#9105A8;
+}
+.busCards section img{
+width: 100%;
+max-width: 400px;
+}
+.busCards section:nth-child(2) img{
+    height: 200px;
+    width: auto;
+}
+.directory button{
+    display: none;
 }
 /*---- WEATHER ----*/
 .threeDay{

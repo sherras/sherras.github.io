@@ -5,7 +5,6 @@ fetch(businessReq)
     return response.json();
 })
 .then(function (jsonObject){
-    console.table(jsonObject);
     const businesses = jsonObject ['businesses'];
     const cards = document.querySelector('.busCards')
 
@@ -21,6 +20,7 @@ fetch(businessReq)
         h2.textContent = `${business.name}`;
         logo.setAttribute('src', business.logo);
         logo.setAttribute('alt', `${business.name} Logo`);
+        logo.setAttribute('loading', 'lazy');
         phone.textContent = `${business.phone}`;
         email.textContent = `${business.email}`;
         website.textContent = `${business.name} Website`;
