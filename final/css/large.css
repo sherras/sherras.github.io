@@ -10,8 +10,20 @@ main, footer{
     margin: auto;
 }
 
+
 /*---DIRECTORY---*/
 .directory div.gridding{
     grid-template-columns: 1fr 1fr 1fr;
+}
+/*--- CONTACT ---*/
+.tucMap{
+    width: 60%;
+}
+.boardOd{
+    display: flex;
+   justify-content: center;
+}
+.BoD{
+    width: 100%;
 }
 }

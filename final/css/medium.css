@@ -78,6 +78,22 @@ form legend{
     text-align: start;
 }
 
+/*--- CONTACT ---*/
+.tucMap{
+    width: 40%;
+    margin-right: 20px;
+}
+.mapCont{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+    border: 5px solid #9105A8;
+    border-radius: 20px;
+}
+.cDetails{
+    margin-left: 40px;
+}
 
 /*--- FOOTER ---*/
 .contactInfo{
