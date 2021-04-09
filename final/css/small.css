@@ -321,6 +321,7 @@ textarea{
     margin-right: 30px;
     background-color:#ffe60042;
     text-align: start;
+    border-radius: 20px;
 
 }
 form label.tag input:required{
@@ -343,28 +344,28 @@ td{
     border: 1px solid #9105A8;
 }
 th:nth-child(2){
-    background-color: #5e1600;
+    background-color: #9b2603;
     color: white;
 }
 td:nth-child(2){
-    background-color: #5e160056;
+    background-color: #9b26035d;
 }
 th:nth-child(3){
-    background-color: #d17f03;
+    background-color: #7e3901;
     color: white;
 }
 td:nth-child(3){
-    background-color: #d17f036b;
+    background-color: #7e390170;
 }
 th:nth-child(4){
-    background-color: #04adc4;
+    background-color: #045964;
     color: white;
 }
 td:nth-child(4){
     background-color: #04aec45b;
 }
 th:nth-child(5){
-    background-color: #a57a02;
+    background-color: #856c00;
     color: white;
 }
 td:nth-child(5){
