@@ -25,7 +25,7 @@ fetch(businessReq)
         email.textContent = `${business.email}`;
         website.textContent = `${business.name} Website`;
         website.setAttribute( 'href', business.website);
-        website.setAttribute( 'target', '_blank_');
+        website.setAttribute( 'target', 'blank_');
         address.textContent = `${business.address}`;
 
         card.append(h2);
