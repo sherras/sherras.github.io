@@ -1,0 +1,13 @@
+@media only screen and (min-width: 1140px){
+nav ul li a{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/*--- MAIN ---*/
+main, footer{
+    width: 80%;
+    margin: auto;
+}
+
+}

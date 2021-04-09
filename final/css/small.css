@@ -57,7 +57,6 @@ header picture{
 nav{
     background-color: #9105A8;
     text-align: center;
-
 }
 nav ul{
     list-style-type: none;
@@ -97,7 +96,8 @@ nav button:hover{
     border-radius: 10px 10px 10px 10px;
 }
 /*---- MAIN ----*/
-.join button{
+.join button, 
+form input.submitBtn{
     padding: 10px;
     background-color: #9105A8;
     color: white;
@@ -110,7 +110,9 @@ nav button:hover{
     margin-top: 15px;
 }
 
-.join button:hover{
+.join button:hover,
+form input.submitBtn:hover{
+
     background-color:#FFE500;
     color:#4C00B8;
     transition: 0.5s;
@@ -134,11 +136,13 @@ nav button:hover{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.businessAds h2{
+.businessAds h1{
     color: white;
     
 }
-.busCard{
+.busCard,
+.tucCard,
+.busCards section{
 border: 5px solid #9105A8;
 border-radius: 20px;
 padding: 10px;
@@ -149,12 +153,38 @@ margin-bottom: 20px;
 width: 85%;
 max-width: 415px;
 }
-.busCard img{
+.busCard img, .tucPhotos img{
     width: 100%;
     max-width: 400px;
     box-shadow: #ccc 5px 7px 5px;
+    
+}
+.busCard h3 a{
+    text-decoration: none;
+    transition: font-size 1s;
+}
+.busCard h3:hover{
+font-size: 1.5rem;
 }
 
+/*--- DIRECTORY ---*/
+.directory{
+    background-color:#4C00B8;
+}
+.directory h1{
+    color: white;
+}
+.busCards section a{
+    text-decoration: none;
+    color: black;
+    width: 80%;
+    transition: font-size 1s;
+
+}
+.busCards section a:hover{
+    font-size: 1.25rem;
+    color:#9105A8;
+}
 /*---- WEATHER ----*/
 .threeDay{
    display: flex;
@@ -215,15 +245,125 @@ max-width: 415px;
     padding-bottom: 20px;
 }
 
-/*---- TUCUMCARI PAGE PHOTO GAL ----*/
+/*---- TUCUMCARI PAGE PHOTOS ----*/
 .tucPhotos{
-    display: flex;
-    
+    background-color:#4C00B8;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.tucPhotos h2{
+    color: white;
 }
 .tucPhotos img{
     width: 100%;
     max-width: 300px;
-    
+}
+.tucPhotos p{
+    margin-bottom: 20px;
+}
+
+/*---- JOIN  ----*/
+form{
+    width: 70%;
+    margin: auto;
+}
+form fieldset{
+    margin: auto;
+    border: 3px solid #9105A8;
+    border-radius: 20px;
+    padding: 1rem;
+}
+form legend{
+    color:#9105A8;
+    padding: .5rem;
+    font-size: 1.25rem;
+}
+form div{
+    display: block;
+    padding-top: .5rem;
+    text-align: start;
+}
+form label.tag{
+    display: block;
+    padding-top: .5em;
+    text-align: start;
+
+}
+form label.tag input, form label.tag select{
+    display: block;
+    border: 1px solid #9105A8;
+    border-radius: 20px;
+    padding: 1rem;
+    color:#333;
+    width: 80%;
+    max-width: 200px;
+    background-color:#ffe60042;
+    text-align: start;
+
+}
+textarea{
+    width: 100%;
+    max-width: 20rem;
+    margin-right: 30px;
+    background-color:#ffe60042;
+    text-align: start;
+
+}
+form label.tag input:required{
+    border-left: 7px solid red;
+}
+form label.tag input:required:valid{
+    border-left: 7px solid green;
+
+}
+
+table{
+    margin: auto;
+    margin-top: 30px;
+    border-collapse: collapse;
+    width: 90%;
+}
+th,
+td{
+    padding: .1rem;
+    border: 1px solid #9105A8;
+}
+th:nth-child(2){
+    background-color: #5e1600;
+    color: white;
+}
+td:nth-child(2){
+    background-color: #5e160056;
+}
+th:nth-child(3){
+    background-color: #d17f03;
+    color: white;
+}
+td:nth-child(3){
+    background-color: #d17f036b;
+}
+th:nth-child(4){
+    background-color: #04adc4;
+    color: white;
+}
+td:nth-child(4){
+    background-color: #04aec45b;
+}
+th:nth-child(5){
+    background-color: #a57a02;
+    color: white;
+}
+td:nth-child(5){
+    background-color: #a57a0252;
+}
+th:nth-child(1){
+    color:white;
+    background-color:#4C00B8;
+}
+.memOptions p{
+    margin-bottom: -20px;
+    width: 100%;
 }
 
 /*---- FOOTER ----*/
@@ -232,40 +372,23 @@ footer{
     color: white;
     padding: 20px;
     margin-top: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-    justify-items: center;
 
 }
 footer h3{
     color: white;
 }
 .contactInfo{
-    grid-column: 1/3;
-    grid-row: 1/2;
+
     text-align: center;
-}
-.socialIcons{
-    grid-column: 1/3;
-    grid-row: 1/2;
-    display: flex;
-    flex-direction: row;
-    justify-items:end;
 }
 .socialIcons img{
 -webkit-filter: invert(100%);
+width: 25%;
 max-width: 3.5rem;
-padding: 1rem;
+padding: .5rem;
 }
-.tucMap{
-    grid-column: span 2;
-    grid-row: 2/3;
-}
+
 .footRunner{
-    grid-column: 1/4;
-    grid-row: 3/4;
     margin-top: 15px;
     
     

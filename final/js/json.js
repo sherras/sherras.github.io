@@ -23,7 +23,7 @@ fetch(businessReq)
         logo.setAttribute('alt', `${business.name} Logo`);
         phone.textContent = `${business.phone}`;
         email.textContent = `${business.email}`;
-        website.textContent = `${business.website}`;
+        website.textContent = `${business.name} Website`;
         website.setAttribute( 'href', business.website);
         website.setAttribute( 'target', '_blank_');
         address.textContent = `${business.address}`;

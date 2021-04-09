@@ -17,8 +17,8 @@
 
 <header>
     <picture class="logo">
-        <source media='(max-width: 800px)'srcset="images/tuclogo-200.png" alt="Tucumcari Logo"> 
-        <source media='(max-width: 1000px)'srcset="images/tuclogo.png" alt="Tucumcari Logo">
+        <source media='(max-width: 800px)' srcset="images/tuclogo-200.png"> 
+        <source media='(max-width: 1000px)' srcset="images/tuclogo.png">
         <img src="images/tuclogo.png" alt='Logo'>
     </picture> 
     <section>
@@ -30,9 +30,9 @@
 <nav class="clearfix">
     <button onclick="toggleMenu()">&#9776;</button>
     <ul id="firstNav" class="close">
-        <li class="navActive"><a href="https://sherras.github.io/final/index.html">Home</a></li>
+        <li ><a href="https://sherras.github.io/final/index.html">Home</a></li>
         <li ><a href="https://sherras.github.io/final/tucumcari.html">Tucumcari</a></li>
-        <li><a href="https://sherras.github.io/final/join.html">Join</a></li>
+        <li class="navActive"><a href="https://sherras.github.io/final/join.html">Join</a></li>
         <li><a href="https://sherras.github.io/final/directory.html">Directory</a></li>
         <li ><a href="https://sherras.github.io/final/contact.html">Contact</a></li>
     </ul>
@@ -40,28 +40,28 @@
 
     <main>
     <h1>Join Us!</h1>
-    <form method="GET" action="https://sherras.github.io/final/thanks.html">
+    <form method="GET" action="https://sherras.github.io/final/thankyou.html">
         <fieldset>
             <legend>Tell Us About Yourself</legend>
-            <label class="first"> First Name*<input type="text" name="firstName" pattern="[a-zA-Z -.'']{5,}" required></label>
-            <label class="first"> Last Name*<input type="text" name="lastName" pattern="[a-zA-Z -.'']{5,}" required></label>
-            <label class="first"> Title<input type="text" name="title" required></label>
-            <label class="first"> Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-            <label class="first"> Cell Phone Number<input type="tel" name="phone" ></label>
+            <label class="tag"> First Name*<input type="text" name="firstName" pattern="[a-zA-Z -.'']{5,}" required></label>
+            <label class="tag"> Last Name*<input type="text" name="lastName" pattern="[a-zA-Z -.'']{5,}" required></label>
+            <label class="tag"> Title<input type="text" name="title"></label>
+            <label class="tag"> Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="tag"> Cell Phone Number<input type="tel" name="phone" ></label>
         </fieldset>
         <fieldset>
             <legend>Tell Us About Your Business</legend>
-            <label class="first"> Business Name*<input type="text" name="businessName" pattern="[a-zA-Z -.'']{5,}" required></label>
-            <label class="first"> Business Address<input type="street" placeholder="Street"></label>
-            <label class="first"> <input type="city" placeholder="City"></label>
-            <label class="first"> <input type="state" placeholder="State"></label>
-            <label class="first"> <input type="zip" placeholder="12345"></label>
-            <label class="first"> Website<input type="website" name="website" placeholder="yourbusiness.com"></label>
+            <label class="tag"> Business Name*<input type="text" name="businessName" pattern="[a-zA-Z -.'']{5,}" required></label>
+            <label class="tag"> Business Address<br> Street<input type="text" placeholder="Street"></label>
+            <label class="tag">City<input type="text" placeholder="City"></label>
+            <label class="tag">State<input type="text" placeholder="State"></label>
+            <label class="tag">ZIP Code<input type="number" placeholder="12345"></label>
+            <label class="tag"> Website<input type="url" name="website" placeholder="yourbusiness.com"></label>
             <div class="comment">Business Description:</div>
-            <label class="first">
+            <label class="tag">
                 <textarea name="comments" rows="4" cols="50"></textarea>
             </label>
-            <label class="first">Membership**<select name="region" >
+            <label class="tag">Membership**<select name="region" >
                 <option value="" disabled selected>Select Membership</option>
                 <option value="Non-profit">Non-profit ($100)</option>
                 <option value="Bronze">Bronze ($200)</option>
@@ -74,30 +74,25 @@
         <input type="submit" name='join' value="Join Now" class="submitBtn">
     </form>
     <div class="memOptions">
+    <p>** Description of Membership Options:</p>
+        
         <table>
-    <thead>**Description of Membership Options:</thead>
     <tr>
-        <td>     </td>
-        <td>Luncheon Tickets</td>
-        <td>Directory Listing</td>
-        <td>Business Trainings</td>
-        <td>Social Media Posts</td>
-        <td>Sponsorships w/Advertising</td>
+        <th>Membership Options</th>
+        <th>Non-Profit</th>
+        <th>Bronze</th>
+        <th>Silver</th>
+        <th>Gold</th>
     </tr>
     <tr>
-        <td>Non-Profit</td>
+        <th>Luncheon Tickets</th>
+        <td>&#10003;</td>
+        <td>&#10003;</td>
         <td>&#10003;</td>
         <td>&#10003;</td>
      </tr>
      <tr>
-        <td>Bronze</td>
-        <td>&#10003;</td>
-        <td>&#10003;</td>
-        <td>&#10003;</td>
-
-     </tr>
-     <tr>
-        <td>Silver</td>
+        <th>Directory Listing</th>
         <td>&#10003;</td>
         <td>&#10003;</td>
         <td>&#10003;</td>
@@ -105,13 +100,28 @@
 
      </tr>
      <tr>
-        <td>Gold</td>
-        <td>&#10003;</td>
-        <td>&#10003;</td>
+        <th>Business Trainings</th>
+        <td> </td>
         <td>&#10003;</td>
         <td>&#10003;</td>
         <td>&#10003;</td>
 
+     </tr>
+     <tr>
+        <th>Social Media Posts</th>
+        <td> </td>
+        <td> </td>
+        <td>&#10003;</td>
+        <td>&#10003;</td>
+     </tr>
+     <tr>
+         
+        <th>Sponsorships/ Advertising</th>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>&#10003;</td>
+         
      </tr>
     </table>
     </div>
@@ -119,19 +129,22 @@
 
     </main>
     <footer>
+        <section class="topFoot">
         <div class="contactInfo">
         <h3>Contact Information</h3>
         <p class="location">&#x27A9; Address: 404 West Route 66 <br> PO Drawer E <br>Tucumcari, NM 88401 </p>
         <p>	&#x2709; Email: chamber@tucumcarinm.com</p>
         <p>&#x2706; Phone: 575-461-1694</p>
         <p> &#x270E; Fax: 575-461-3884</p>
+        </div>
         <div class="socialIcons">
             <a href="https://facebook.com" target="blank"><img src="images/iconfinder_facebook.png" alt="facebook"></a>
             <a href="https://instagram.com" target="blank"><img src="images/iconfinder_instagram.png" alt="instagram"></a>
             <a href="https://youtube.com" target="blank"><img src="images/iconfinder_youtube.png" alt="youTube"></a>
             </div>
-    </div>
+        </section>
     
+        
         <div class="footRunner">
         <p class="nameInfo">&copy;<span id="year"></span> | Tucumcari Chamber of Commerce | Designed by Sherra Swapp | <span id="currentdate"></span></p>
         </div>
