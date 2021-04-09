@@ -343,33 +343,33 @@ td{
     padding: .1rem;
     border: 1px solid #9105A8;
 }
-th:nth-child(2){
+th:nth-child(5){
     background-color: #9b2603;
     color: white;
 }
-td:nth-child(2){
+td:nth-child(5){
     background-color: #9b26035d;
 }
 th:nth-child(3){
-    background-color: #7e3901;
+    background-color: #580154;
     color: white;
 }
 td:nth-child(3){
-    background-color: #7e390170;
+    background-color: #58015457;
 }
 th:nth-child(4){
-    background-color: #045964;
+    background-color: #01383f;
     color: white;
 }
 td:nth-child(4){
-    background-color: #04aec45b;
+    background-color: #01383f54;
 }
-th:nth-child(5){
-    background-color: #856c00;
+th:nth-child(2){
+    background-color: #002385;
     color: white;
 }
-td:nth-child(5){
-    background-color: #a57a0252;
+td:nth-child(2){
+    background-color: #00238565;
 }
 th:nth-child(1){
     color:white;
