@@ -395,9 +395,7 @@ th:nth-child(1){
     width: 100%;
     max-width: 400px;
 }
-main.mThanks p{
-    margin-bottom: 40px;
-}
+
 /*---- FOOTER ----*/
 footer{
     background-color: #9105A8;
@@ -428,5 +426,8 @@ padding: .5rem;
 iframe{
     width: 100%;
     
+}
+footer a{
+    color:white;
 }
 
